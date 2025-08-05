@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="/" /> <!-- BU SATIR -->
+
+    <title>Kayıp Hayvan İlanı | DoldurKabı</title>
+
+    <!-- OG Meta -->
+    <meta property="og:title" content="Kayıp Hayvan İlanı | DoldurKabı" />
+    <meta property="og:description" content="Bu hayvan kayıp! Gören var mı? Detaylar için hemen sayfayı ziyaret et." />
+    <meta property="og:image" content="https://doldurkabi.com/img/logo.png" />
+    <meta property="og:url" content="https://doldurkabi.com" />
+    <meta property="og:type" content="website" />
+
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Jost&family=Montserrat:wght@900&display=swap"
+        rel="stylesheet" />
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore-compat.js"></script>
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyDbcD...", // senin key
+            authDomain: "doldur-kabi-48e54.firebaseapp.com",
+            projectId: "doldur-kabi-48e54",
+            storageBucket: "doldur-kabi-48e54.appspot.com",
+            messagingSenderId: "91650...",
+            appId: "1:91650...:web:..."
+        };
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+    </script>
+</head>
+
+<body>
+    <div class="lost-wrapper">
+
+        <!-- Sol kısım: Mor alan -->
+        <div class="lost-left">
+            <a href="/" class="lost-logo-wrapper" style="text-decoration: none;">
+                <img src="/img/logo.png" alt="Logo" class="lost-logo" />
+                <h1 style="color: white;">DoldurKabı</h1>
+            </a>
+        </div>
+        
+
+        <!-- Sağ kısım: İlan içeriği -->
+        <div class="lost-right">
+            <div style="width: 100%; max-width: 880px;">
+                <h2 class="lost-page-title">KAYIP HAYVAN İLANI</h2>
+
+                <div class="lost-content">
+                    <!-- Resim -->
+                    <div class="lost-image-box">
+                        <img class="lost-image" src="/img/placeholder.png" alt="İlan görseli" />
+                    </div>
+
+                    <!-- Bilgiler -->
+                    <div class="lost-info">
+                        <h3 class="lost-title">Hayvan Adı</h3>
+                        <p class="lost-description">Açıklama yükleniyor...</p>
+                        <p class="lost-meta">📍 Lokasyon | Tür</p>
+                        <p class="lost-owner">📞 Telefon</p>
+                    </div>
+                </div>
+
+                <!-- Uygulama Tanıtımı -->
+                <div class="lost-app-section">
+                    <h3 class="lost-app-title">📱 Bu ilan DoldurKabı'nda yayınlanmıştır</h3>
+                    <p class="lost-app-subtext">İlan sahibine ulaşmak, detayları görmek ve DoldurKabı'nı keşfetmek için
+                        hemen indir!</p>
+
+                    <div class="lost-app-buttons">
+                        <a href="https://apps.apple.com/" target="_blank" class="lost-app-button bg-primary-gradient">
+                            <i class="fab fa-apple fa-2x text-white"></i>
+                            <div class="text-box">
+                                <p class="small-text">Şuradan indir</p>
+                                <p class="store-text">App Store</p>
+                            </div>
+                        </a>
+
+                        <a href="https://play.google.com/" target="_blank"
+                            class="lost-app-button bg-secondary-gradient">
+                            <i class="fab fa-android fa-2x text-white"></i>
+                            <div class="text-box">
+                                <p class="small-text">Şuradan indir</p>
+                                <p class="store-text">Google Play</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jost&family=Montserrat:wght@900&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Jost', sans-serif;
+            background-color: #fdfdfd;
+        }
+
+        .lost-wrapper {
+            display: flex;
+            height: 100vh;
+        }
+
+        .lost-left {
+            flex: 0.5;
+            background-color: #9346A1;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .lost-left h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900;
+            font-size: 36px;
+            text-align: center;
+            margin: 0;
+        }
+
+        .lost-right {
+            flex: 1.5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+        }
+
+        .lost-content {
+            display: flex;
+            gap: 24px;
+            align-items: flex-start;
+            max-width: 880px;
+            width: 100%;
+        }
+
+        .lost-image-box {
+            flex: 1;
+        }
+
+        .lost-image {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            object-fit: cover;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .lost-info {
+            flex: 1;
+            padding: 8px;
+        }
+
+        .lost-title {
+            font-size: 24px;
+            color: #9346A1;
+            margin-bottom: 16px;
+        }
+
+        .lost-description {
+            font-size: 15px;
+            color: #333;
+            line-height: 1.6;
+            margin-bottom: 16px;
+        }
+
+        .lost-meta {
+            font-weight: 500;
+            color: #555;
+            margin-bottom: 8px;
+        }
+
+        .lost-owner {
+            font-weight: 500;
+            color: #333;
+            margin-top: 12px;
+        }
+
+        .lost-logo-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .lost-logo {
+            width: 200px;
+            height: 200px;
+            border-radius: 20px;
+            object-fit: contain;
+            background: transparent;
+            padding: 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .lost-page-title {
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            color: #9346A1;
+            margin-bottom: 28px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .lost-app-section {
+            margin-top: 48px;
+            padding: 24px;
+            background-color: #f5ebfb;
+            border-radius: 16px;
+            text-align: center;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+        }
+
+        .lost-app-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: #9346A1;
+            margin-bottom: 8px;
+        }
+
+        .lost-app-subtext {
+            font-size: 15px;
+            color: #333;
+            margin-bottom: 24px;
+        }
+
+        .lost-app-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .lost-app-button {
+            display: flex;
+            align-items: center;
+            padding: 12px 20px;
+            border-radius: 12px;
+            color: white;
+            text-decoration: none;
+            min-width: 220px;
+            transition: all 0.3s ease;
+        }
+
+        .lost-app-button:hover {
+            transform: scale(1.05);
+        }
+
+        .lost-app-button .text-box {
+            margin-left: 14px;
+            text-align: left;
+        }
+
+        .lost-app-button .small-text {
+            margin: 0;
+            font-size: 13px;
+            color: white;
+        }
+
+        .lost-app-button .store-text {
+            margin: 0;
+            font-size: 17px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .bg-primary-gradient {
+            background: linear-gradient(135deg, #000000, #3f3f3f);
+        }
+
+        .bg-secondary-gradient {
+            background: linear-gradient(135deg, #5DBE8A, #35a173);
+        }
+
+        @media (max-width: 768px) {
+            .lost-wrapper {
+                flex-direction: column;
+            }
+
+            .lost-left {
+                flex: unset;
+                padding: 24px;
+            }
+
+            .lost-left h1 {
+                font-size: 24px !important;
+            }
+
+            .lost-page-title {
+                font-size: 22px;
+            }
+
+            .lost-right {
+                padding: 24px 16px;
+            }
+
+            .lost-content {
+                flex-direction: column;
+            }
+
+            .lost-logo {
+                width: 64px;
+                height: 64px;
+            }
+
+            .lost-logo-wrapper {
+                flex-direction: row;
+                gap: 12px;
+            }
+
+            .lost-app-button {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+
+    <script>
+        const pathParts = window.location.pathname.split('/').filter(Boolean);
+        const postId = (pathParts[0] === 'lost' && pathParts[1]) ? pathParts[1] : null;
+
+        if (!postId) {
+            alert("Geçersiz bağlantı! Lütfen geçerli bir ilan linki açınız.");
+        } else {
+            console.log('Kayıp İlan ID:', postId);
+
+            const postRef = db.collection("lost_pets").doc(postId);
+            postRef.get().then(doc => {
+                if (doc.exists) {
+                    const data = doc.data();
+
+                    if (data.imageUrls && data.imageUrls.length > 0) {
+                        document.querySelector('.lost-image').src = data.imageUrls[0];
+                    }
+
+                    document.querySelector('.lost-description').innerHTML = data.description
+                        ? data.description.replace(/\n/g, '<br>')
+                        : "Açıklama belirtilmemiş.";
+
+                    const location = data.location || "Bilinmiyor";
+                    const type = data.petType || "Bilinmiyor";
+                    document.querySelector('.lost-meta').textContent = `📍 ${location} | Tür: ${type}`;
+
+                    const phone = data.phone || "Belirtilmedi";
+                    document.querySelector('.lost-owner').textContent = `📞 ${phone}`;
+
+                    const name = data.petName || "Kayıp Hayvan";
+                    document.querySelector('.lost-title').textContent = `${name}`;
+                } else {
+                    alert("Kayıp ilanı bulunamadı.");
+                }
+            }).catch(error => {
+                console.error("🔥 Firebase Hatası:", error);
+                alert("Bir hata oluştu. Lütfen daha sonra tekrar deneyin.");
+            });
+        }
+    </script>
+
+</body>
+
+</html>
+

@@ -1,0 +1,23 @@
+{
+  "hosting": {
+    "public": "public",
+    "rewrites": [
+      {
+        "source": "/adoption/**",
+        "destination": "/adoption.html"
+      },
+      {
+        "source": "/lost/**",
+        "destination": "/lost.html"
+      },
+      {
+        "source": "/post/**",
+        "destination": "/post.html"
+      },
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

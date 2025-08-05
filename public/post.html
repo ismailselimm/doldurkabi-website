@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="/" />
+
+    <title>Topluluk Gönderisi | DoldurKabı</title>
+
+    <!-- OG Meta -->
+    <meta property="og:title" content="Topluluk Gönderisi | DoldurKabı" />
+    <meta property="og:description" content="Bu gönderiyi DoldurKabı topluluğunda gör!" />
+    <meta property="og:image" content="https://doldurkabi.com/img/logo.png" />
+    <meta property="og:url" content="https://doldurkabi.com" />
+    <meta property="og:type" content="website" />
+
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Jost&family=Montserrat:wght@900&display=swap"
+        rel="stylesheet" />
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore-compat.js"></script>
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyDbcD...", // senin key
+            authDomain: "doldur-kabi-48e54.firebaseapp.com",
+            projectId: "doldur-kabi-48e54",
+            storageBucket: "doldur-kabi-48e54.appspot.com",
+            messagingSenderId: "91650...",
+            appId: "1:91650...:web:..."
+        };
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+    </script>
+</head>
+
+<body>
+    <div class="post-wrapper">
+
+        <!-- Sol kısım: Mor alan -->
+        <div class="post-left">
+            <a href="/" class="post-logo-wrapper" style="text-decoration: none;">
+                <img src="/img/logo.png" alt="Logo" class="post-logo" />
+                <h1 style="color: white;">DoldurKabı</h1>
+            </a>
+        </div>
+
+
+        <!-- Sağ kısım: İçerik -->
+        <div class="post-right">
+            <div style="width: 100%; max-width: 880px;">
+                <h2 class="post-page-title">TOPLULUK GÖNDERİSİ</h2>
+
+                <div class="post-content">
+                    <!-- Resim -->
+                    <div class="post-image-box">
+                        <!-- Loading Spinner -->
+                        <div id="imageLoading" class="post-image-loading">
+                            <div class="spinner"></div>
+                        </div>
+
+                        <!-- Görsel -->
+                        <img class="post-image" id="postImage" src="/img/placeholder.png" alt="Post görseli"
+                            style="display: none;" />
+
+                        <!-- Oklar -->
+                        <div class="post-image-controls">
+                            <button onclick="prevImage()">‹</button>
+                            <span id="imageIndex">1/1</span>
+                            <button onclick="nextImage()">›</button>
+                        </div>
+                    </div>
+
+
+                    <!-- Bilgiler -->
+                    <div class="post-info">
+                        <h3 class="post-title">İsim Yükleniyor...</h3>
+                        <p class="post-description">Açıklama yükleniyor...</p>
+                        <p class="post-meta">📍 Lokasyon</p>
+                        <p class="post-owner">🕒 Tarih</p>
+
+                        <div class="post-social">
+                            <span>❤️ <span id="likeCount">0</span></span>
+                            <span style="margin-left: 20px;">💬 <span id="commentCount">0</span></span>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Uygulama Tanıtımı -->
+                <div class="post-app-section">
+                    <h3 class="post-app-title">📱 Bu gönderi DoldurKabı topluluğunda yayınlandı</h3>
+                    <p class="post-app-subtext">
+                        Beğen, yorum yap, topluluğa katıl ve hayvanlara destek ol!<br>
+                        Tüm özellikler için hemen DoldurKabı uygulamasını indir.
+                    </p>
+                    <div class="post-app-buttons">
+                        <a href="https://apps.apple.com/" target="_blank" class="post-app-button bg-primary-gradient">
+                            <i class="fab fa-apple fa-2x text-white"></i>
+                            <div class="text-box">
+                                <p class="small-text">Şuradan indir</p>
+                                <p class="store-text">App Store</p>
+                            </div>
+                        </a>
+
+                        <a href="https://play.google.com/" target="_blank"
+                            class="post-app-button bg-secondary-gradient">
+                            <i class="fab fa-android fa-2x text-white"></i>
+                            <div class="text-box">
+                                <p class="small-text">Şuradan indir</p>
+                                <p class="store-text">Google Play</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Jost', sans-serif;
+            background-color: #fdfdfd;
+        }
+
+        .post-image-loading {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 16/9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f3f3f3;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            margin-bottom: 8px;
+        }
+
+        .spinner {
+            width: 32px;
+            height: 32px;
+            border: 4px solid #9346A1;
+            border-top: 4px solid transparent;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+
+        .post-image-controls {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 8px;
+            gap: 16px;
+            font-size: 16px;
+            color: #555;
+        }
+
+        .post-image-controls button {
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: #9346A1;
+        }
+
+        .post-social {
+            margin-top: 20px;
+            font-size: 16px;
+            font-weight: 500;
+            color: #444;
+        }
+
+
+        .post-wrapper {
+            display: flex;
+            height: 100vh;
+        }
+
+        .post-left {
+            flex: 0.5;
+            background-color: #9346A1;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .post-left h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 900;
+            font-size: 36px;
+            text-align: center;
+            margin: 0;
+        }
+
+        .post-logo-wrapper {
+            color: white;
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .post-logo-wrapper h1 {
+            color: white;
+        }
+
+
+        .post-logo {
+            width: 200px;
+            height: 200px;
+            border-radius: 20px;
+            object-fit: contain;
+            background: transparent;
+            padding: 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .post-right {
+            flex: 1.5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+        }
+
+        .post-page-title {
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            color: #9346A1;
+            margin-bottom: 28px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .post-content {
+            display: flex;
+            gap: 24px;
+            align-items: flex-start;
+            max-width: 880px;
+            width: 100%;
+        }
+
+        .post-image-box {
+            flex: 1;
+        }
+
+        .post-image {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            object-fit: cover;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .post-info {
+            flex: 1;
+            padding: 8px;
+        }
+
+        .post-title {
+            font-size: 24px;
+            color: #9346A1;
+            margin-bottom: 16px;
+        }
+
+        .post-description {
+            font-size: 15px;
+            color: #333;
+            line-height: 1.6;
+            margin-bottom: 16px;
+        }
+
+        .post-meta {
+            font-weight: 500;
+            color: #555;
+            margin-bottom: 8px;
+        }
+
+        .post-owner {
+            font-weight: 500;
+            color: #333;
+            margin-top: 12px;
+        }
+
+        .post-app-section {
+            margin-top: 48px;
+            padding: 24px;
+            background-color: #f5ebfb;
+            border-radius: 16px;
+            text-align: center;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+        }
+
+        .post-app-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: #9346A1;
+            margin-bottom: 8px;
+        }
+
+        .post-app-subtext {
+            font-size: 15px;
+            color: #333;
+            margin-bottom: 24px;
+        }
+
+        .post-app-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .post-app-button {
+            display: flex;
+            align-items: center;
+            padding: 12px 20px;
+            border-radius: 12px;
+            color: white;
+            text-decoration: none;
+            min-width: 220px;
+            transition: all 0.3s ease;
+        }
+
+        .post-app-button:hover {
+            transform: scale(1.05);
+        }
+
+        .post-app-button .text-box {
+            margin-left: 14px;
+            text-align: left;
+        }
+
+        .post-app-button .small-text {
+            margin: 0;
+            font-size: 13px;
+            color: white;
+        }
+
+        .post-app-button .store-text {
+            margin: 0;
+            font-size: 17px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .bg-primary-gradient {
+            background: linear-gradient(135deg, #000000, #3f3f3f);
+        }
+
+        .bg-secondary-gradient {
+            background: linear-gradient(135deg, #5DBE8A, #35a173);
+        }
+
+        @media (max-width: 768px) {
+            .post-wrapper {
+                flex-direction: column;
+            }
+
+            .post-left {
+                flex: unset;
+                padding: 24px;
+            }
+
+            .post-left h1 {
+                font-size: 24px !important;
+            }
+
+            .post-page-title {
+                font-size: 22px;
+            }
+
+            .post-right {
+                padding: 24px 16px;
+            }
+
+            .post-content {
+                flex-direction: column;
+            }
+
+            .post-logo {
+                width: 64px;
+                height: 64px;
+            }
+
+            .post-logo-wrapper {
+                flex-direction: row;
+                gap: 12px;
+            }
+
+            .post-app-button {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    </style>
+
+    <script>
+        const pathParts = window.location.pathname.split('/').filter(Boolean);
+        const postId = (pathParts[0] === 'post' && pathParts[1]) ? pathParts[1] : null;
+
+        let imageUrls = [];
+        let currentImageIndex = 0;
+
+        function updateImage() {
+            const imageEl = document.getElementById('postImage');
+            const indexText = document.getElementById('imageIndex');
+            const loader = document.getElementById('imageLoading');
+
+            if (!imageUrls.length) return;
+
+            // Görseli gizle, loading'i göster
+            imageEl.style.display = "none";
+            loader.style.display = "flex";
+            indexText.textContent = `${currentImageIndex + 1}/${imageUrls.length}`;
+
+            const tempImg = new Image();
+            tempImg.src = imageUrls[currentImageIndex];
+
+            tempImg.onload = () => {
+                imageEl.src = tempImg.src;
+                loader.style.display = "none";
+                imageEl.style.display = "block";
+            };
+
+            tempImg.onerror = () => {
+                loader.innerHTML = "<p style='color:#9346A1;'>Görsel yüklenemedi</p>";
+            };
+        }
+
+        function nextImage() {
+            if (imageUrls.length > 1) {
+                currentImageIndex = (currentImageIndex + 1) % imageUrls.length;
+                updateImage();
+            }
+        }
+
+        function prevImage() {
+            if (imageUrls.length > 1) {
+                currentImageIndex = (currentImageIndex - 1 + imageUrls.length) % imageUrls.length;
+                updateImage();
+            }
+        }
+
+        if (!postId) {
+            alert("Geçersiz bağlantı! Lütfen geçerli bir gönderi linki açınız.");
+        } else {
+            console.log('Topluluk Post ID:', postId);
+            const postRef = db.collection("posts").doc(postId);
+
+            postRef.get().then(doc => {
+                if (doc.exists) {
+                    const data = doc.data();
+
+                    // 🌄 Görseller
+                    if (data.imageUrls && data.imageUrls.length > 0) {
+                        imageUrls = data.imageUrls;
+                        updateImage();
+                    }
+
+                    // 📝 Açıklama
+                    document.querySelector('.post-description').innerHTML =
+                        data.description?.replace(/\n/g, '<br>') || "Açıklama belirtilmemiş.";
+
+                    // 📍 Lokasyon
+                    const location = data.cityDistrict || "Bilinmiyor";
+                    document.querySelector('.post-meta').textContent = `📍 ${location}`;
+
+                    // 👤 Kullanıcı adı + tarih
+                    const user = data.username || "Bilinmeyen Kullanıcı";
+                    const timestamp = data.createdAt?.toDate();
+                    let formattedDate = "Tarih bilinmiyor";
+
+                    if (timestamp) {
+                        const day = String(timestamp.getDate()).padStart(2, '0');
+                        const month = String(timestamp.getMonth() + 1).padStart(2, '0');
+                        const year = timestamp.getFullYear();
+                        const hour = String(timestamp.getHours()).padStart(2, '0');
+                        const minute = String(timestamp.getMinutes()).padStart(2, '0');
+                        formattedDate = `${day}.${month}.${year} ${hour}:${minute}`;
+                    }
+
+                    document.querySelector('.post-owner').textContent = `👤 ${user} • 🕒 ${formattedDate}`;
+                    document.querySelector('.post-title').textContent = `${user}`;
+
+                    // ❤️ Beğeni
+                    document.getElementById('likeCount').textContent = data.likes || 0;
+
+                    // 💬 Yorum
+                    // 💬 Yorum sayısını direkt veriden al
+                    document.getElementById('commentCount').textContent = data.comments || 0;
+
+
+                } else {
+                    alert("Topluluk gönderisi bulunamadı.");
+                }
+            }).catch(error => {
+                console.error("🔥 Firebase Hatası:", error);
+                alert("Bir hata oluştu. Lütfen daha sonra tekrar deneyin.");
+            });
+        }
+    </script>
+
+</body>
+
+</html>
