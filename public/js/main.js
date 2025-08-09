@@ -67,11 +67,14 @@
     // Screenshot carousel
     $(".screenshot-carousel").owlCarousel({
         autoplay: true,
-        smartSpeed: 1000,
+        autoplayTimeout: 3000, // kaç ms’de bir resim değişsin
+        smartSpeed: 500,       // geçiş animasyonu hızı (daha kısa daha hızlı)
         loop: true,
         dots: true,
         items: 1
     });
+    
+    
 
 
     // Testimonials carousel

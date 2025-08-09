@@ -39,12 +39,13 @@
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 </head>
 
 
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
+
+    <!-- Navbar & Hero -->
     <div class="container-xxl bg-white p-0">
         <!-- Spinner Start -->
         <div id="spinner"
@@ -57,724 +58,840 @@
 
 
         <!-- Navbar & Hero Start -->
-        <div class="container-xxl position-relative p-0" id="home">
-            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
-                <a href="" class="navbar-brand p-0">
-                    <h1 class="m-0">DoldurKabı</h1>
-                    <!-- <img src="img/logo.png" alt="Logo"> -->
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="fa fa-bars"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav mx-auto py-0">
-                        <a href="#home" class="nav-item nav-link active">Anasayfa</a>
-                        <a href="#about" class="nav-item nav-link">Hakkımızda</a>
-                        <a href="#feature" class="nav-item nav-link">Özellikler</a>
-                        <a href="#pricing" class="nav-item nav-link">Destek Ol</a>
-                        <a href="#review" class="nav-item nav-link">Yorumlar</a>
-                        <a href="#contact" class="nav-item nav-link">İletişim</a>
-                    </div>
-                    <a href="" class="btn btn-primary-gradient rounded-pill py-2 px-4 ms-3 d-none d-lg-block">Uygulamayı
-                        İndir</a>
-                </div>
-            </nav>
+        <nav class="navbar navbar-expand-lg navbar-light clean-nav scrolled px-4 px-lg-5 py-3 py-lg-0">
+            <a href="https://doldurkabi.com" class="navbar-brand p-0 d-flex align-items-center">
+                <img src="./img/logo.png" alt="DoldurKabı" class="brand-logo me-2" />
+                <span class="brand-title m-0">DoldurKabı</span>
+            </a>
 
-            <div class="container-xxl bg-primary hero-header">
-                <div class="container px-lg-5">
-                    <div class="row g-5">
-                        <div class="col-lg-8 text-center text-lg-start">
-                            <h1 class="text-white mb-4 animated slideInDown">Sokak Hayvanlarına Destek İçin Tasarlandı
-                            </h1>
-                            <p class="text-white pb-3 animated slideInDown">DoldurKabı, sokaktaki canlara yardım etmeni
-                                kolaylaştırır. Mama kabı ve hayvan evi ekle, kaybolan dostlarımız için ilan oluştur,
-                                sahipsiz hayvanlara yeni yuvalar bul. Barınaklar ve veterinerlerle entegre çalışan bu
-                                uygulama sayesinde yardım elin her zaman onların yanında.</p>
-                            <a href="#about"
-                                class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 rounded-pill me-3 animated slideInLeft">
-                                Detayları Gör
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav mx-auto">
+                    <a href="#home" class="nav-item nav-link active">Anasayfa</a>
+                    <a href="#about" class="nav-item nav-link">Hakkımızda</a>
+                    <a href="#feature" class="nav-item nav-link">Özellikler</a>
+                    <a href="#pricing" class="nav-item nav-link">Destek Ol</a>
+                    <a href="#review" class="nav-item nav-link">Yorumlar</a>
+                    <a href="#contact" class="nav-item nav-link">İletişim</a>
+                </div>
+                <a href="#" class="btn btn-primary-gradient rounded-pill py-2 px-4 d-none d-lg-inline-flex">Uygulamayı
+                    İndir</a>
+            </div>
+        </nav>
+
+        <div class="container-xxl bg-primary hero-header">
+            <div class="container px-lg-5">
+                <div class="row g-5">
+                    <div class="col-lg-8 text-center text-lg-start">
+                        <h1 class="text-white mb-4 animated slideInDown">Sokak Hayvanlarına Destek İçin Tasarlandı</h1>
+                        <p class="text-white pb-3 animated slideInDown">
+                            DoldurKabı, sokaktaki canlara yardım etmeni kolaylaştırır. Yalnızca birkaç dokunuşla mama
+                            kabı veya hayvan evi ekleyebilir, kaybolan dostlarımız için ilan oluşturabilir ve sahipsiz
+                            hayvanlara sıcak yuvalar bulabilirsin.
+                            Barınaklar, gönüllüler ve veterinerlerle entegre çalışan bu sistem sayesinde yardımların en
+                            hızlı şekilde ihtiyaç sahiplerine ulaşır. DoldurKabı ile her zaman onların yanında ol!
+                            <br><br>
+                            Uygulamamız sayesinde yardım noktalarının haritadaki konumlarını görebilir, acil ihtiyaç
+                            bildirimlerini anında alabilir ve topluluk etkinliklerine katılabilirsin. İster bireysel
+                            ister grup olarak, yapacağın her katkı hayat kurtarır.
+                        </p>
+                        <div class="d-flex flex-wrap gap-3">
+                            <a href="#ozellikler" class="btn btn-outline-light px-4 py-2 rounded-pill">
+                                Özellikleri Keşfet
                             </a>
-
-                            <a href="#contact"
-                                class="btn btn-secondary-gradient py-sm-3 px-4 px-sm-5 rounded-pill animated slideInRight">Bizimle
-                                İletişime Geç</a>
+                            <a href="#destek-ol" class="btn btn-outline-light px-4 py-2 rounded-pill">
+                                Destek Ol
+                            </a>
                         </div>
-                        <div class="col-lg-4 d-flex justify-content-center justify-content-lg-end wow fadeInUp"
-                            data-wow-delay="0.3s">
-                            <div class="owl-carousel screenshot-carousel">
-                                <img class="img-fluid" src="img/screenshot-1.png" alt="">
-                                <img class="img-fluid" src="img/screenshot-2.png" alt="">
-                                <img class="img-fluid" src="img/screenshot-3.png" alt="">
-                                <img class="img-fluid" src="img/screenshot-4.png" alt="">
-                                <img class="img-fluid" src="img/screenshot-5.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-        </div>
-        <!-- Navbar & Hero End -->
-
-
-
-        <!-- About Start -->
-        <div class="container-xxl py-5" id="about">
-            <div class="container py-5 px-lg-5">
-                <div class="row g-5 align-items-center">
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <h5 class="text-primary-gradient fw-medium">Uygulama Hakkında</h5>
-                        <h1 class="mb-4">Sokak Hayvanları Yardım Uygulaması</h1>
-                        <p class="mb-4">DoldurKabı, sokaktaki can dostlarımız için geliştirilmiş sosyal bir yardım
-                            platformudur. Mama kabı ekleyebilir, kayıp hayvan ilanı verebilir, sahiplendirme yapabilir
-                            ve belediye destekli projelere katılarak daha fazla hayvana ulaşabilirsin. Yardım etmek
-                            artık sadece bir dokunuş uzağında!</p>
-                        <div class="row g-4 mb-4">
-                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
-                                <div class="d-flex">
-                                    <i class="fa fa-cogs fa-2x text-primary-gradient flex-shrink-0 mt-1"></i>
-                                    <div class="ms-3">
-                                        <h2 class="mb-0" data-toggle="counter-up">15K+</h2>
-                                        <p class="text-primary-gradient mb-0">Aktif Kullanıcı</p>
-                                    </div>
+                        <!-- Sayaç şeridi -->
+                        <div class="row g-4 mt-4 text-white counter-stats">
+                            <div class="col-4">
+                                <div class="stat-box">
+                                    <div class="stat-number">12K+</div>
+                                    <div class="stat-label">Mama Noktası</div>
                                 </div>
                             </div>
-                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
-                                <div class="d-flex">
-                                    <i class="fa fa-comments fa-2x text-secondary-gradient flex-shrink-0 mt-1"></i>
-                                    <div class="ms-3">
-                                        <h2 class="mb-0" data-toggle="counter-up">3.200+</h2>
-                                        <p class="text-secondary-gradient mb-0">Kullanıcı Yorumu</p>
-                                    </div>
+                            <div class="col-4">
+                                <div class="stat-box">
+                                    <div class="stat-number">3.8K</div>
+                                    <div class="stat-label">Gönüllü</div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="stat-box">
+                                    <div class="stat-number">95+</div>
+                                    <div class="stat-label">Veteriner</div>
                                 </div>
                             </div>
                         </div>
-                        <a href="#feature" class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 rounded-pill mt-3">
-                            Özellikleri Keşfet
-                        </a>
+
                     </div>
-                    <div class="col-lg-6">
-                        <img class="img-fluid wow fadeInUp" data-wow-delay="0.5s" src="img/about.png">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- About End -->
 
 
-
-        <!-- Features Start -->
-        <div class="container-xxl py-5" id="feature">
-            <div class="container py-5 px-lg-5">
-                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                    <h5 class="text-primary-gradient fw-medium">Uygulama Özellikleri</h5>
-                    <h1 class="mb-5">Harika Özellikler</h1>
-                </div>
-                <div class="row g-4">
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="feature-item bg-light rounded p-4">
-                            <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle mb-4"
-                                style="width: 60px; height: 60px;">
-                                <i class="fa fa-map-marker-alt text-white fs-4"></i>
-                            </div>
-                            <h5 class="mb-3">Mama Kabı Ekle</h5>
-                            <p class="m-0">Konumunu kullanarak mama kabı veya hayvan evi ekleyebilir, ihtiyaç
-                                noktalarını haritaya kolayca işaretleyebilirsin.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="feature-item bg-light rounded p-4">
-                            <div class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle mb-4"
-                                style="width: 60px; height: 60px;">
-                                <i class="fa fa-paw text-white fs-4"></i>
-                            </div>
-                            <h5 class="mb-3">Hayvan Sahiplendirme</h5>
-                            <p class="m-0">Sahipsiz hayvanlar için ilan oluştur, güvenli şekilde sahiplendirme sürecini
-                                yönet.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="feature-item bg-light rounded p-4">
-                            <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle mb-4"
-                                style="width: 60px; height: 60px;">
-                                <i class="fa fa-search text-white fs-4"></i>
-                            </div>
-                            <h5 class="mb-3">Kayıp İlanları</h5>
-                            <p class="m-0">Kayıp hayvanlar için ilan ver, detaylı açıklama ve görsellerle yardım çağrısı
-                                yap.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="feature-item bg-light rounded p-4">
-                            <div class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle mb-4"
-                                style="width: 60px; height: 60px;">
-                                <i class="fa fa-bolt text-white fs-4"></i>
-                            </div>
-                            <h5 class="mb-3">Acil Durum Bildir</h5>
-                            <p class="m-0">Yaralı ya da zor durumda olan hayvanları acil bildirim sistemiyle hızlıca
-                                ilgili yerlere iletebilirsin.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="feature-item bg-light rounded p-4">
-                            <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle mb-4"
-                                style="width: 60px; height: 60px;">
-                                <i class="fa fa-hand-holding-heart text-white fs-4"></i>
-                            </div>
-                            <h5 class="mb-3">Topluluk Desteği</h5>
-                            <p class="m-0">Gönderiler paylaş, diğer gönüllülerle iletişim kur, yardımları birlikte
-                                organize et.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="feature-item bg-light rounded p-4">
-                            <div class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle mb-4"
-                                style="width: 60px; height: 60px;">
-                                <i class="fa fa-university text-white fs-4"></i>
-                            </div>
-                            <h5 class="mb-3">Belediye Entegrasyonu</h5>
-                            <p class="m-0">Belediyelerle entegre çalışan sistem sayesinde resmi destekli projelere
-                                katılabilirsin.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Features End -->
-
-
-
-        <!-- Screenshot Start -->
-        <div class="container-xxl py-5">
-            <div class="container py-5 px-lg-5">
-                <div class="row g-5 align-items-center">
-                    <div class="col-lg-8 wow fadeInUp" data-wow-delay="0.1s">
-                        <h5 class="text-primary-gradient fw-medium">Ekran Görüntüleri</h5>
-                        <h1 class="mb-4">Kullanıcı Dostu Arayüzüyle DoldurKabı'nı Keşfet</h1>
-                        <p class="mb-4">DoldurKabı, kullanıcı dostu ve sade arayüzü sayesinde herkesin kolayca
-                            kullanabileceği bir yapıya sahiptir. Hayvanlara yardım etmek için ihtiyacın olan her şey
-                            parmaklarının ucunda.</p>
-                        <p><i class="fa fa-check text-primary-gradient me-3"></i>Basit ve sezgisel tasarım</p>
-                        <p><i class="fa fa-check text-primary-gradient me-3"></i>Gelişmiş harita ve konum sistemi</p>
-                        <p class="mb-4"><i class="fa fa-check text-primary-gradient me-3"></i>Tüm işlemler birkaç
-                            dokunuşla tamamlanır</p>
-                        <a href="#download" class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 rounded-pill mt-3">
-                            Uygulamayı Hemen İndir
-                        </a>
-                    </div>
-                    <div class="col-lg-4 d-flex justify-content-center justify-content-lg-end wow fadeInUp"
+                    <div class="col-lg-4 d-flex align-items-start justify-content-center justify-content-lg-end wow fadeInUp"
                         data-wow-delay="0.3s">
                         <div class="owl-carousel screenshot-carousel">
-                            <img class="img-fluid" src="img/screenshot-1.png" alt="">
-                            <img class="img-fluid" src="img/screenshot-2.png" alt="">
-                            <img class="img-fluid" src="img/screenshot-3.png" alt="">
-                            <img class="img-fluid" src="img/screenshot-4.png" alt="">
-                            <img class="img-fluid" src="img/screenshot-5.png" alt="">
+                            <img class="img-fluid" src="img/Doldurkabı1.PNG" alt="">
+                            <img class="img-fluid" src="img/Doldurkabı2.PNG" alt="">
+                            <img class="img-fluid" src="img/Doldurkabı3.PNG" alt="">
+                            <img class="img-fluid" src="img/Doldurkabı12.PNG" alt="">
+                            <img class="img-fluid" src="img/Doldurkabı16.PNG" alt="">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Screenshot End -->
+
+    </div>
+    <!-- Navbar & Hero End -->
 
 
+    <!-- About Start -->
+    <div class="container-l py-5" id="about">
+        <div class="container py-5 px-lg-5">
+            <div class="row g-5 align-items-center">
+                <!-- Sol Taraf -->
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="fw-medium" style="background: linear-gradient(135deg, var(--primary), var(--secondary));
+          -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                        Uygulama Hakkında
+                    </h5>
+                    <h1 class="mb-4 fw-bold">Sokak Hayvanları Yardım Uygulaması</h1>
+                    <p class="mb-4" style="max-width: 520px;">
+                        DoldurKabı, sokaktaki can dostlarımız için geliştirilmiş sosyal bir yardım platformudur.
+                        Mama kabı ekleyebilir, kayıp hayvan ilanı verebilir, sahiplendirme yapabilir ve belediye
+                        destekli projelere
+                        katılarak daha fazla hayvana ulaşabilirsin. Yardım etmek artık sadece bir dokunuş uzağında!
+                    </p>
 
-        <!-- Process Start -->
-        <div class="container-xxl py-5">
-            <div class="container py-5 px-lg-5">
-                <div class="text-center pb-4 wow fadeInUp" data-wow-delay="0.1s">
-                    <h5 class="text-primary-gradient fw-medium">Nasıl Çalışır?</h5>
-                    <h1 class="mb-5">3 Kolay Adım</h1>
+                    <!-- İstatistik Kartları -->
+                    <div class="row g-4 mb-4">
+                        <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
+                            <div class="shadow-sm rounded-4 p-3 bg-white d-flex align-items-center">
+                                <i class="fa fa-cogs fa-2x text-primary-gradient flex-shrink-0"></i>
+                                <div class="ms-3">
+                                    <h2 class="mb-0" data-toggle="counter-up">15387</h2>
+                                    <p class="text-primary-gradient mb-0 small">Aktif Kullanıcı</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
+                            <div class="shadow-sm rounded-4 p-3 bg-white d-flex align-items-center">
+                                <i class="fa fa-comments fa-2x text-secondary-gradient flex-shrink-0"></i>
+                                <div class="ms-3">
+                                    <h2 class="mb-0" data-toggle="counter-up">3221</h2>
+                                    <p class="text-secondary-gradient mb-0 small">Kullanıcı Yorumu</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Buton -->
+                    <a href="#feature" class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 rounded-pill mt-3 shadow">
+                        Özellikleri Keşfet
+                    </a>
                 </div>
-                <div class="row gy-5 gx-4 justify-content-center">
-                    <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="position-relative bg-light rounded pt-5 pb-4 px-4">
-                            <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle position-absolute top-0 start-50 translate-middle shadow"
-                                style="width: 100px; height: 100px;">
-                                <i class="fa fa-cog fa-3x text-white"></i>
-                            </div>
-                            <h5 class="mt-4 mb-3">Uygulamayı İndir</h5>
-                            <p class="mb-0">App Store veya Google Play üzerinden DoldurKabı uygulamasını hemen indir,
-                                ücretsiz olarak kullanmaya başla.</p>
+
+                <!-- Sağ Taraf -->
+                <div class="col-lg-6 text-center">
+                    <img class="img-fluid wow fadeInUp phone-frame" data-wow-delay="0.5s" src="img/about.png">
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Features Start -->
+    <div class="container-xxl py-5" id="feature">
+        <div class="container py-5 px-lg-5">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h5 class="text-primary-gradient fw-medium">Uygulama Özellikleri</h5>
+                <h1 class="mb-5">Harika Özellikler</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="feature-item bg-light rounded p-4">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle mb-4"
+                            style="width: 60px; height: 60px;">
+                            <i class="fa fa-map-marker-alt text-white fs-4"></i>
                         </div>
+                        <h5 class="mb-3">Mama Kabı Ekle</h5>
+                        <p class="m-0">Konumunu kullanarak mama kabı veya hayvan evi ekleyebilir, sokak hayvanlarının
+                            ihtiyaç duyduğu noktaları harita üzerinde kolayca işaretleyebilir, diğer kullanıcıların da
+                            bu alanları görmesini sağlayabilirsin.</p>
                     </div>
-                    <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="position-relative bg-light rounded pt-5 pb-4 px-4">
-                            <div class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle position-absolute top-0 start-50 translate-middle shadow"
-                                style="width: 100px; height: 100px;">
-                                <i class="fa fa-address-card fa-3x text-white"></i>
-                            </div>
-                            <h5 class="mt-4 mb-3">Profilini Oluştur</h5>
-                            <p class="mb-0">Bir hesap oluştur ve kendini tanıt. Sahiplendirme, mama noktası, ilanlar
-                                gibi özellikleri kişiselleştirilmiş şekilde kullan.</p>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="feature-item bg-light rounded p-4">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle mb-4"
+                            style="width: 60px; height: 60px;">
+                            <i class="fa fa-paw text-white fs-4"></i>
                         </div>
+                        <h5 class="mb-3">Hayvan Sahiplendirme</h5>
+                        <p class="m-0">Sahipsiz hayvanlar için ilan oluşturabilir, güvenli şekilde sahiplendirme
+                            sürecini yönetebilir, fotoğraf ve açıklama ekleyerek hayvanların yeni yuvalarına kavuşmasına
+                            yardımcı olabilirsin.</p>
                     </div>
-                    <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="position-relative bg-light rounded pt-5 pb-4 px-4">
-                            <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle position-absolute top-0 start-50 translate-middle shadow"
-                                style="width: 100px; height: 100px;">
-                                <i class="fa fa-check fa-3x text-white"></i>
-                            </div>
-                            <h5 class="mt-4 mb-3">Yardım Etmeye Başla</h5>
-                            <p class="mb-0">Mama kabı yerleştir, kayıp ilanı oluştur, hayvan sahiplen, diğer
-                                gönüllülerle birlikte destek ol.</p>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="feature-item bg-light rounded p-4">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle mb-4"
+                            style="width: 60px; height: 60px;">
+                            <i class="fa fa-search text-white fs-4"></i>
+                        </div>
+                        <h5 class="mb-3">Kayıp İlanları</h5>
+                        <p class="m-0">
+                            Kayıp hayvanlar için ilan vererek çevrendeki insanlardan yardım talep edebilir ve daha hızlı
+                            bulunmalarını sağlayabilirsin.
+                            Böylece hem hayvanın güvenli şekilde bulunma şansı artar hem de topluluk içinde dayanışma
+                            güçlenir.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="feature-item bg-light rounded p-4">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle mb-4"
+                            style="width: 60px; height: 60px;">
+                            <i class="fa fa-bolt text-white fs-4"></i>
+                        </div>
+                        <h5 class="mb-3">Acil Durum Bildir</h5>
+                        <p class="m-0">Yaralı, hasta veya zor durumda olan hayvanları acil bildirim sistemi üzerinden en
+                            hızlı şekilde ilgili kurumlara veya gönüllülere iletebilir, onların yardımına koşulmasını
+                            sağlayabilirsin.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="feature-item bg-light rounded p-4">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-primary-gradient rounded-circle mb-4"
+                            style="width: 60px; height: 60px;">
+                            <i class="fa fa-hand-holding-heart text-white fs-4"></i>
+                        </div>
+                        <h5 class="mb-3">Topluluk Desteği</h5>
+                        <p class="m-0">Gönderiler paylaşabilir, diğer gönüllülerle iletişim kurabilir, yardımları
+                            birlikte organize ederek daha etkili yardım kampanyaları oluşturabilirsin.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="feature-item bg-light rounded p-4">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-secondary-gradient rounded-circle mb-4"
+                            style="width: 60px; height: 60px;">
+                            <i class="fa fa-university text-white fs-4"></i>
+                        </div>
+                        <h5 class="mb-3">Belediye Entegrasyonu</h5>
+                        <p class="m-0">Belediyelerle entegre çalışan sistem sayesinde resmi destekli projelere
+                            katılabilir, yerel yönetimlerle birlikte sokak hayvanlarına daha kapsamlı yardım
+                            sağlayabilirsin.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Features End -->
+
+
+    <!-- Screenshot Start -->
+    <div class="container-xxl py-5">
+        <div class="container py-5 px-lg-5">
+            <div class="row g-5 align-items-center">
+                <!-- Sol taraf: Başlık + Açıklama -->
+                <div class="col-lg-8 wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="text-primary-gradient fw-medium">Ekran Görüntüleri</h5>
+                    <h1 class="mb-4">Kullanıcı Dostu Arayüzüyle <span class="highlight">DoldurKabı</span>'nı Keşfet</h1>
+                    <p class="mb-4">
+                        DoldurKabı, kullanıcı dostu ve sade arayüzü sayesinde herkesin kolayca kullanabileceği bir
+                        yapıya sahiptir.
+                        Hayvanlara yardım etmek için ihtiyacın olan her şey parmaklarının ucunda.
+                        Tüm özellikler, en hızlı ve sezgisel şekilde sana sunulur.
+                    </p>
+                    <p><span class="feature-icon"><i class="fa fa-paw text-primary-gradient"></i></span>Basit ve
+                        sezgisel tasarım</p>
+                    <p><span class="feature-icon"><i
+                                class="fa fa-map-marker-alt text-primary-gradient"></i></span>Gelişmiş harita ve konum
+                        sistemi</p>
+                    <p><span class="feature-icon"><i class="fa fa-bolt text-primary-gradient"></i></span>Tüm işlemler
+                        birkaç dokunuşla tamamlanır</p>
+                    <a href="#download"
+                        class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 rounded-pill mt-3 shadow-hover">
+                        Uygulamayı Hemen İndir
+                    </a>
+                </div>
+
+                <!-- Sağ taraf: Telefon frame + Carousel -->
+                <div class="col-lg-4 d-flex justify-content-center justify-content-lg-end wow fadeInUp"
+                    data-wow-delay="0.3s">
+                    <div class="owl-carousel screenshot-carousel">
+                        <img class="img-fluid" src="img/Doldurkabı5.PNG" alt="Uygulama ekran 1">
+                        <img class="img-fluid" src="img/Doldurkabı7.PNG" alt="Uygulama ekran 2">
+                        <img class="img-fluid" src="img/Doldurkabı10.PNG" alt="Uygulama ekran 3">
+                        <img class="img-fluid" src="img/Doldurkabı13.PNG" alt="Uygulama ekran 4">
+                        <img class="img-fluid" src="img/Doldurkabı18.PNG" alt="Uygulama ekran 5">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Screenshot End -->
+
+
+
+    <!-- Process Start -->
+    <div class="container-xxl py-5">
+        <div class="container py-5 px-lg-5 process">
+            <div class="text-center pb-4 wow fadeInUp" data-wow-delay="0.1s">
+                <h5 class="text-primary-gradient fw-medium">Nasıl Çalışır?</h5>
+                <h1 class="mb-5">3 Kolay Adım</h1>
+            </div>
+
+            <div class="row gy-5 gx-4 justify-content-center process-steps">
+                <!-- Adım 1 -->
+                <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="step-card">
+                        <div class="step-icon">
+                            <i class="fa fa-download"></i>
+                            <span class="step-index">1</span>
+                        </div>
+                        <h5 class="mt-4 mb-2">Uygulamayı İndir</h5>
+                        <p class="mb-0">
+                            App Store veya Google Play’den DoldurKabı’nı indir, ücretsiz kullanmaya başla.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Adım 2 -->
+                <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="step-card">
+                        <div class="step-icon">
+                            <i class="fa fa-address-card"></i>
+                            <span class="step-index">2</span>
+                        </div>
+                        <h5 class="mt-4 mb-2">Profilini Oluştur</h5>
+                        <p class="mb-0">
+                            Kısa bir kayıtla profilini aç; sahiplendirme, mama noktası ve ilanları kişiselleştir.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Adım 3 -->
+                <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="step-card">
+                        <div class="step-icon">
+                            <i class="fa fa-check"></i>
+                            <span class="step-index">3</span>
+                        </div>
+                        <h5 class="mt-4 mb-2">Yardım Etmeye Başla</h5>
+                        <p class="mb-0">
+                            Mama kabı yerleştir, kayıp ilanı oluştur, sahiplen; gönüllülerle birlikte destek ol.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Process End -->
+
+
+
+    <!-- Download Start -->
+    <div class="container-xxl py-5">
+        <div class="container py-5 px-lg-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6">
+                    <img class="img-fluid wow fadeInUp phone-frame" data-wow-delay="0.1s" src="img/about.png">
+                </div>                
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <h5 class="text-primary-gradient fw-medium">Uygulamayı İndir</h5>
+                    <h1 class="mb-4">DoldurKabı'nın En Güncel Sürümünü Hemen İndir</h1>
+                    <p class="mb-4">Sokak hayvanlarına yardım etmek artık çok kolay! DoldurKabı ile mama noktası
+                        ekleyebilir, sahiplendirme ilanı oluşturabilir ve kayıp hayvanlara destek olabilirsin. Hemen
+                        indir, fark yaratmaya başla!</p>
+                    <div class="row g-4">
+                        <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
+                            <a href="" class="d-flex bg-primary-gradient rounded py-3 px-4">
+                                <i class="fab fa-apple fa-3x text-white flex-shrink-0"></i>
+                                <div class="ms-3">
+                                    <p class="text-white mb-0">Şuradan İndir</p>
+                                    <h5 class="text-white mb-0">App Store</h5>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
+                            <a href="" class="d-flex bg-secondary-gradient rounded py-3 px-4">
+                                <i class="fab fa-android fa-3x text-white flex-shrink-0"></i>
+                                <div class="ms-3">
+                                    <p class="text-white mb-0">Şuradan İndir</p>
+                                    <h5 class="text-white mb-0">Google Play</h5>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Process End -->
+    </div>
+    <!-- Download End -->
 
 
 
-        <!-- Download Start -->
-        <div class="container-xxl py-5">
-            <div class="container py-5 px-lg-5">
-                <div class="row g-5 align-items-center">
-                    <div class="col-lg-6">
-                        <img class="img-fluid wow fadeInUp" data-wow-delay="0.1s" src="img/about.png">
-                    </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <h5 class="text-primary-gradient fw-medium">Uygulamayı İndir</h5>
-                        <h1 class="mb-4">DoldurKabı'nın En Güncel Sürümünü Hemen İndir</h1>
-                        <p class="mb-4">Sokak hayvanlarına yardım etmek artık çok kolay! DoldurKabı ile mama noktası
-                            ekleyebilir, sahiplendirme ilanı oluşturabilir ve kayıp hayvanlara destek olabilirsin. Hemen
-                            indir, fark yaratmaya başla!</p>
+    <!-- Pricing Start -->
+    <div class="container-xxl py-5" id="pricing">
+        <div class="container py-5 px-lg-5">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h5 class="text-primary-gradient fw-medium">Sponsorlar İçin Destek Paketleri</h5>
+                <h1 class="mb-5">Size Uygun Paketi Seçin</h1>
+            </div>
+            <div class="tab-class text-center pricing wow fadeInUp" data-wow-delay="0.1s">
+                <ul class="nav nav-pills d-inline-flex justify-content-center bg-primary-gradient rounded-pill mb-5">
+                    <li class="nav-item">
+                        <button class="nav-link active" data-bs-toggle="pill" href="#tab-1">Aylık</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link" data-bs-toggle="pill" href="#tab-2">Yıllık</button>
+                    </li>
+                </ul>
+                <div class="tab-content text-start">
+                    <!-- Aylık -->
+                    <div id="tab-1" class="tab-pane fade show p-0 active">
                         <div class="row g-4">
-                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.5s">
-                                <a href="" class="d-flex bg-primary-gradient rounded py-3 px-4">
-                                    <i class="fab fa-apple fa-3x text-white flex-shrink-0"></i>
-                                    <div class="ms-3">
-                                        <p class="text-white mb-0">Şuradan İndir</p>
-                                        <h5 class="text-white mb-0">App Store</h5>
+                            <!-- Gümüş -->
+                            <div class="col-lg-4">
+                                <div class="bg-light rounded">
+                                    <div class="border-bottom p-4 mb-4">
+                                        <h4 class="text-primary-gradient mb-1">Gümüş Paket</h4>
+                                        <span>Temel görünürlük & destek</span>
                                     </div>
-                                </a>
+                                    <div class="p-4 pt-0">
+                                        <h1 class="mb-3">
+                                            <small class="align-top">₺</small>750<small class="align-bottom"> /
+                                                ay</small>
+                                        </h1>
+                                        <div class="d-flex justify-content-between mb-3"><span>Destekçilerimiz
+                                                sayfasında görünürlük</span><i
+                                                class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                        <div class="d-flex justify-content-between mb-2"><span>Web sitesinde
+                                                logo</span><i class="fa fa-check text-primary-gradient pt-1"></i>
+                                        </div>
+                                        <br>
+                                        <a href="#"
+                                            class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4 start-package"
+                                            data-package="Gümüş Paket / Aylık">Başla</a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.7s">
-                                <a href="" class="d-flex bg-secondary-gradient rounded py-3 px-4">
-                                    <i class="fab fa-android fa-3x text-white flex-shrink-0"></i>
-                                    <div class="ms-3">
-                                        <p class="text-white mb-0">Şuradan İndir</p>
-                                        <h5 class="text-white mb-0">Google Play</h5>
+                            <!-- Altın -->
+                            <div class="col-lg-4">
+                                <div class="bg-light rounded border">
+                                    <div class="border-bottom p-4 mb-4">
+                                        <h4 class="text-primary-gradient mb-1">Altın Paket</h4>
+                                        <span>Daha fazla görünürlük ve avantaj</span>
                                     </div>
-                                </a>
+                                    <div class="p-4 pt-0">
+                                        <h1 class="mb-3">
+                                            <small class="align-top">₺</small>1250<small class="align-bottom"> /
+                                                ay</small>
+                                        </h1>
+                                        <div class="d-flex justify-content-between mb-3"><span>Banner reklam
+                                                gösterimi</span><i class="fa fa-check text-primary-gradient pt-1"></i>
+                                        </div>
+                                        <div class="d-flex justify-content-between mb-3"><span>Uygulama içinde
+                                                logo</span><i class="fa fa-check text-primary-gradient pt-1"></i>
+                                        </div>
+                                        <div class="d-flex justify-content-between mb-2"><span>Web & destekçi
+                                                listesinde yer alma</span><i
+                                                class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                        <a href="#"
+                                            class="btn btn-secondary-gradient rounded-pill py-2 px-4 mt-4 start-package"
+                                            data-package="Altın Paket / Aylık">Başla</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Elmas -->
+                            <div class="col-lg-4">
+                                <div class="bg-light rounded">
+                                    <div class="border-bottom p-4 mb-4">
+                                        <h4 class="text-primary-gradient mb-1">Elmas Paket</h4>
+                                        <span>En geniş kapsamlı destek ve prestij</span>
+                                    </div>
+                                    <div class="p-4 pt-0">
+                                        <h1 class="mb-3">
+                                            <small class="align-top">₺</small>2500<small class="align-bottom"> /
+                                                ay</small>
+                                        </h1>
+                                        <div class="d-flex justify-content-between mb-3"><span>Öncelikli görünürlük
+                                                (ilk sırada)</span><i
+                                                class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                        <div class="d-flex justify-content-between mb-3"><span>Tüm platformlarda
+                                                logo & banner</span><i
+                                                class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                        <div class="d-flex justify-content-between mb-2"><span>Sosyal medya duyurusu
+                                                + teşekkür postu</span><i
+                                                class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                        <a href="#"
+                                            class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4 start-package"
+                                            data-package="Elmas Paket / Aylık">Başla</a>
+
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <!-- Yıllık -->
+                    <div id="tab-2" class="tab-pane fade p-0">
+                        <div class="row g-4">
+                            <!-- Aynı paketlerin yıllık halleri -->
+                            <div class="col-lg-4">
+                                <div class="bg-light rounded">
+                                    <div class="border-bottom p-4 mb-4">
+                                        <h4 class="text-primary-gradient mb-1">Gümüş Paket</h4>
+                                        <span>Yıllık avantajlı fiyat</span>
+                                    </div>
+                                    <div class="p-4 pt-0">
+                                        <h1 class="mb-3">
+                                            <small class="align-top">₺</small>7500<small class="align-bottom"> /
+                                                yıl</small>
+                                        </h1>
+                                        <div class="d-flex justify-content-between mb-3"><span>Destekçilerimiz
+                                                sayfasında görünürlük</span><i
+                                                class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                        <div class="d-flex justify-content-between mb-2"><span>Web sitesinde
+                                                logo</span><i class="fa fa-check text-primary-gradient pt-1"></i>
+                                        </div>
+                                        <br>
+                                        <a href="#"
+                                            class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4 start-package"
+                                            data-package="Gümüş Paket / Yıllık">Başla</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="bg-light rounded border">
+                                    <div class="border-bottom p-4 mb-4">
+                                        <h4 class="text-primary-gradient mb-1">Altın Paket</h4>
+                                        <span>Yıllık görünürlük avantajı</span>
+                                    </div>
+                                    <div class="p-4 pt-0">
+                                        <h1 class="mb-3">
+                                            <small class="align-top">₺</small>12000<small class="align-bottom"> /
+                                                yıl</small>
+                                        </h1>
+                                        <div class="d-flex justify-content-between mb-3"><span>Banner reklam
+                                                gösterimi</span><i class="fa fa-check text-primary-gradient pt-1"></i>
+                                        </div>
+                                        <div class="d-flex justify-content-between mb-3"><span>Uygulama içinde
+                                                logo</span><i class="fa fa-check text-primary-gradient pt-1"></i>
+                                        </div>
+                                        <div class="d-flex justify-content-between mb-2"><span>Web & destekçi
+                                                listesinde yer alma</span><i
+                                                class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                        <a href="#"
+                                            class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4 start-package"
+                                            data-package="Altın Paket / Yıllık">Başla</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="bg-light rounded">
+                                    <div class="border-bottom p-4 mb-4">
+                                        <h4 class="text-primary-gradient mb-1">Elmas Paket</h4>
+                                        <span>En geniş kapsamlı destek</span>
+                                    </div>
+                                    <div class="p-4 pt-0">
+                                        <h1 class="mb-3">
+                                            <small class="align-top">₺</small>24000<small class="align-bottom"> /
+                                                yıl</small>
+                                        </h1>
+                                        <div class="d-flex justify-content-between mb-3"><span>Öncelikli görünürlük
+                                                (ilk sırada)</span><i
+                                                class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                        <div class="d-flex justify-content-between mb-3"><span>Tüm platformlarda
+                                                logo & banner</span><i
+                                                class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                        <div class="d-flex justify-content-between mb-2"><span>Sosyal medya duyurusu
+                                                + teşekkür postu</span><i
+                                                class="fa fa-check text-primary-gradient pt-1"></i></div>
+                                        <a href="#"
+                                            class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4 start-package"
+                                            data-package="Elmas Paket / Yıllık">Başla</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Yıllık -->
                 </div>
             </div>
         </div>
-        <!-- Download End -->
+    </div>
+    <!-- Pricing End -->
 
 
 
-        <!-- Pricing Start -->
-        <div class="container-xxl py-5" id="pricing">
-            <div class="container py-5 px-lg-5">
-                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                    <h5 class="text-primary-gradient fw-medium">Sponsorlar İçin Destek Paketleri</h5>
-                    <h1 class="mb-5">Size Uygun Paketi Seçin</h1>
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5" id="review">
+        <div class="container py-5 px-lg-5">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h5 class="text-primary-gradient fw-medium">Kullanıcı Yorumları</h5>
+                <h1 class="mb-5">DoldurKabı Hakkında Ne Dediler?</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                <div class="testimonial-item rounded p-4">
+                    <div class="d-flex align-items-center mb-4">
+                        <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/testimonial-1.jpg"
+                            style="width: 85px; height: 85px;">
+                        <div class="ms-4">
+                            <h5 class="mb-1">Elif Kaya</h5>
+                            <p class="mb-1">Veteriner</p>
+                            <div>
+                                <small class="fa fa-star text-warning"></small>
+                                <small class="fa fa-star text-warning"></small>
+                                <small class="fa fa-star text-warning"></small>
+                                <small class="fa fa-star text-warning"></small>
+                                <small class="fa fa-star text-warning"></small>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="mb-0">Mahallemizdeki sokak hayvanlarının durumu artık kontrol altında. DoldurKabı
+                        sayesinde mama kapları ve evler düzenli takip ediliyor.</p>
                 </div>
-                <div class="tab-class text-center pricing wow fadeInUp" data-wow-delay="0.1s">
-                    <ul
-                        class="nav nav-pills d-inline-flex justify-content-center bg-primary-gradient rounded-pill mb-5">
-                        <li class="nav-item">
-                            <button class="nav-link active" data-bs-toggle="pill" href="#tab-1">Aylık</button>
-                        </li>
-                        <li class="nav-item">
-                            <button class="nav-link" data-bs-toggle="pill" href="#tab-2">Yıllık</button>
-                        </li>
+
+                <div class="testimonial-item rounded p-4">
+                    <div class="d-flex align-items-center mb-4">
+                        <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/testimonial-2.jpg"
+                            style="width: 85px; height: 85px;">
+                        <div class="ms-4">
+                            <h5 class="mb-1">Mert Aksoy</h5>
+                            <p class="mb-1">Gönüllü</p>
+                            <div>
+                                <small class="fa fa-star text-warning"></small>
+                                <small class="fa fa-star text-warning"></small>
+                                <small class="fa fa-star text-warning"></small>
+                                <small class="fa fa-star text-warning"></small>
+                                <small class="fa fa-star text-warning"></small>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="mb-0">İstanbul'da kaybolan kedimi bu uygulamayla buldum. İlan oluşturmak ve insanlara
+                        ulaşmak inanılmaz kolaydı. Teşekkürler!</p>
+                </div>
+
+                <div class="testimonial-item rounded p-4">
+                    <div class="d-flex align-items-center mb-4">
+                        <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/testimonial-3.jpg"
+                            style="width: 85px; height: 85px;">
+                        <div class="ms-4">
+                            <h5 class="mb-1">Can Yılmaz</h5>
+                            <p class="mb-1">Belediye Temsilcisi</p>
+                            <div>
+                                <small class="fa fa-star text-warning"></small>
+                                <small class="fa fa-star text-warning"></small>
+                                <small class="fa fa-star text-warning"></small>
+                                <small class="fa fa-star text-warning"></small>
+                                <small class="fa fa-star text-warning"></small>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="mb-0">DoldurKabı'yla çalışmaya başladığımızdan beri gönüllülerle koordinasyon çok daha
+                        kolay hale geldi. Harika bir platform.</p>
+                </div>
+
+                <div class="testimonial-item rounded p-4">
+                    <div class="d-flex align-items-center mb-4">
+                        <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/testimonial-4.jpg"
+                            style="width: 85px; height: 85px;">
+                        <div class="ms-4">
+                            <h5 class="mb-1">Ayse Demir</h5>
+                            <p class="mb-1">Mobil Geliştirici</p>
+                            <div>
+                                <small class="fa fa-star text-warning"></small>
+                                <small class="fa fa-star text-warning"></small>
+                                <small class="fa fa-star text-warning"></small>
+                                <small class="fa fa-star text-warning"></small>
+                                <small class="fa fa-star text-warning"></small>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="mb-0">Uygulamanın tasarımı sade, kullanımı çok kolay. Kayıt, mama ekleme, ilan
+                        paylaşımı gibi her şey mantıklı ve hızlı çalışıyor.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+
+    <!-- Contact Start -->
+    <div class="container-xxl py-5" id="contact">
+        <div class="container py-5 px-lg-5">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h5 class="text-primary-gradient fw-medium">Bize Ulaşın</h5>
+                <h1 class="mb-5">İletişim Formu</h1>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    <div class="wow fadeInUp" data-wow-delay="0.3s">
+                        <p class="text-center mb-4">
+                            DoldurKabı ile ilgili her türlü soru, öneri veya iş birliği talepleriniz için aşağıdaki
+                            formu doldurabilirsiniz. En kısa sürede size dönüş sağlayacağız. Dilerseniz
+                            <a href="mailto:doldurkabi@gmail.com">doldurkabi@gmail.com</a> adresine de
+                            mail atabilirsiniz.
+                        </p>
+                        <form action="https://formspree.io/f/mjkojkrr" method="POST">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="name" name="name"
+                                            placeholder="Adınız" required>
+                                        <label for="name">Adınız</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="email" name="email"
+                                            placeholder="E-posta Adresiniz" required>
+                                        <label for="email">E-posta Adresiniz</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="subject" name="subject"
+                                            placeholder="Konu" required>
+                                        <label for="subject">Konu</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Mesajınızı buraya yazın"
+                                            id="message" name="message" style="height: 150px" required></textarea>
+                                        <label for="message">Mesaj</label>
+                                    </div>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <button class="btn btn-primary-gradient rounded-pill py-3 px-5" type="submit">
+                                        Mesajı Gönder
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-primary text-light footer wow fadeIn" data-wow-delay="0.1s">
+        <div class="container footer-body py-5 px-lg-5">
+            <div class="row g-4 g-lg-5 align-items-start">
+
+                <!-- Logo / Kısa Tanıtım -->
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                        <img src="img/logo.png" alt="DoldurKabı" class="footer-logo">
+                        <span class="h5 m-0 fw-bold text-white">DoldurKabı</span>
+                    </div>
+                    <p class="footer-tagline m-0">
+                        DoldurKabı, sokaktaki dostlarımıza yardım etmeyi kolaylaştıran sosyal bir platformdur.
+                        Harita üzerinden mama–su noktaları ekleyebilir, kayıp/sahiplendirme ilanları oluşturabilir
+                        ve acil ihtiyaç bildirimlerini anında paylaşabilirsin.
+                    </p>
+                </div>
+
+
+                <!-- İletişim -->
+                <div class="col-6 col-lg-3">
+                    <h4 class="text-white mb-3">İletişim</h4>
+                    <ul class="list-unstyled footer-list m-0">
+                        <li><i class="fa fa-map-marker-alt me-2"></i>İstanbul, Türkiye</li>
+                        <li><i class="fa fa-envelope me-2"></i>doldurkabi@gmail.com</li>
                     </ul>
-                    <div class="tab-content text-start">
-                        <!-- Aylık -->
-                        <div id="tab-1" class="tab-pane fade show p-0 active">
-                            <div class="row g-4">
-                                <!-- Gümüş -->
-                                <div class="col-lg-4">
-                                    <div class="bg-light rounded">
-                                        <div class="border-bottom p-4 mb-4">
-                                            <h4 class="text-primary-gradient mb-1">Gümüş Paket</h4>
-                                            <span>Temel görünürlük & destek</span>
-                                        </div>
-                                        <div class="p-4 pt-0">
-                                            <h1 class="mb-3">
-                                                <small class="align-top">₺</small>750<small class="align-bottom"> /
-                                                    ay</small>
-                                            </h1>
-                                            <div class="d-flex justify-content-between mb-3"><span>Destekçilerimiz
-                                                    sayfasında görünürlük</span><i
-                                                    class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <div class="d-flex justify-content-between mb-2"><span>Web sitesinde
-                                                    logo</span><i class="fa fa-check text-primary-gradient pt-1"></i>
-                                            </div>
-                                            <a href=""
-                                                class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4">Başla</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Altın -->
-                                <div class="col-lg-4">
-                                    <div class="bg-light rounded border">
-                                        <div class="border-bottom p-4 mb-4">
-                                            <h4 class="text-primary-gradient mb-1">Altın Paket</h4>
-                                            <span>Daha fazla görünürlük ve avantaj</span>
-                                        </div>
-                                        <div class="p-4 pt-0">
-                                            <h1 class="mb-3">
-                                                <small class="align-top">₺</small>1250<small class="align-bottom"> /
-                                                    ay</small>
-                                            </h1>
-                                            <div class="d-flex justify-content-between mb-3"><span>Banner reklam
-                                                    gösterimi</span><i
-                                                    class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <div class="d-flex justify-content-between mb-3"><span>Uygulama içinde
-                                                    logo</span><i class="fa fa-check text-primary-gradient pt-1"></i>
-                                            </div>
-                                            <div class="d-flex justify-content-between mb-2"><span>Web & destekçi
-                                                    listesinde yer alma</span><i
-                                                    class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <a href=""
-                                                class="btn btn-secondary-gradient rounded-pill py-2 px-4 mt-4">Başla</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- Elmas -->
-                                <div class="col-lg-4">
-                                    <div class="bg-light rounded">
-                                        <div class="border-bottom p-4 mb-4">
-                                            <h4 class="text-primary-gradient mb-1">Elmas Paket</h4>
-                                            <span>En geniş kapsamlı destek ve prestij</span>
-                                        </div>
-                                        <div class="p-4 pt-0">
-                                            <h1 class="mb-3">
-                                                <small class="align-top">₺</small>2500<small class="align-bottom"> /
-                                                    ay</small>
-                                            </h1>
-                                            <div class="d-flex justify-content-between mb-3"><span>Öncelikli görünürlük
-                                                    (ilk sırada)</span><i
-                                                    class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <div class="d-flex justify-content-between mb-3"><span>Tüm platformlarda
-                                                    logo & banner</span><i
-                                                    class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <div class="d-flex justify-content-between mb-2"><span>Sosyal medya duyurusu
-                                                    + teşekkür postu</span><i
-                                                    class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <a href=""
-                                                class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4">Başla</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Yıllık -->
-                        <div id="tab-2" class="tab-pane fade p-0">
-                            <div class="row g-4">
-                                <!-- Aynı paketlerin yıllık halleri -->
-                                <div class="col-lg-4">
-                                    <div class="bg-light rounded">
-                                        <div class="border-bottom p-4 mb-4">
-                                            <h4 class="text-primary-gradient mb-1">Gümüş Paket</h4>
-                                            <span>Yıllık avantajlı fiyat</span>
-                                        </div>
-                                        <div class="p-4 pt-0">
-                                            <h1 class="mb-3">
-                                                <small class="align-top">₺</small>7500<small class="align-bottom"> /
-                                                    yıl</small>
-                                            </h1>
-                                            <div class="d-flex justify-content-between mb-3"><span>Destekçilerimiz
-                                                    sayfasında görünürlük</span><i
-                                                    class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <div class="d-flex justify-content-between mb-2"><span>Web sitesinde
-                                                    logo</span><i class="fa fa-check text-primary-gradient pt-1"></i>
-                                            </div>
-                                            <a href=""
-                                                class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4">Başla</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="bg-light rounded border">
-                                        <div class="border-bottom p-4 mb-4">
-                                            <h4 class="text-primary-gradient mb-1">Altın Paket</h4>
-                                            <span>Yıllık görünürlük avantajı</span>
-                                        </div>
-                                        <div class="p-4 pt-0">
-                                            <h1 class="mb-3">
-                                                <small class="align-top">₺</small>12000<small class="align-bottom"> /
-                                                    yıl</small>
-                                            </h1>
-                                            <div class="d-flex justify-content-between mb-3"><span>Banner reklam
-                                                    gösterimi</span><i
-                                                    class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <div class="d-flex justify-content-between mb-3"><span>Uygulama içinde
-                                                    logo</span><i class="fa fa-check text-primary-gradient pt-1"></i>
-                                            </div>
-                                            <div class="d-flex justify-content-between mb-2"><span>Web & destekçi
-                                                    listesinde yer alma</span><i
-                                                    class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <a href=""
-                                                class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4">Başla</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="bg-light rounded">
-                                        <div class="border-bottom p-4 mb-4">
-                                            <h4 class="text-primary-gradient mb-1">Elmas Paket</h4>
-                                            <span>En geniş kapsamlı destek</span>
-                                        </div>
-                                        <div class="p-4 pt-0">
-                                            <h1 class="mb-3">
-                                                <small class="align-top">₺</small>24000<small class="align-bottom"> /
-                                                    yıl</small>
-                                            </h1>
-                                            <div class="d-flex justify-content-between mb-3"><span>Öncelikli görünürlük
-                                                    (ilk sırada)</span><i
-                                                    class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <div class="d-flex justify-content-between mb-3"><span>Tüm platformlarda
-                                                    logo & banner</span><i
-                                                    class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <div class="d-flex justify-content-between mb-2"><span>Sosyal medya duyurusu
-                                                    + teşekkür postu</span><i
-                                                    class="fa fa-check text-primary-gradient pt-1"></i></div>
-                                            <a href=""
-                                                class="btn btn-primary-gradient rounded-pill py-2 px-4 mt-4">Başla</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- /Yıllık -->
+                </div>
+
+                <!-- Sosyal Medyada Biz -->
+                <div class="col-6 col-lg-2">
+                    <h4 class="text-white mb-3">Sosyal Medyada Biz</h4>
+                    <div class="d-flex flex-wrap gap-2">
+                        <a class="btn btn-social" href="https://www.instagram.com/doldurkabi/"><i
+                                class="fab fa-instagram"></i></a>
+                        <a class="btn btn-social" href="https://www.linkedin.com/in/ismailselimm/"><i
+                                class="fab fa-linkedin-in"></i></a>
                     </div>
+                </div>
+
+                <!-- Hızlı Linkler -->
+                <div class="col-6 col-lg-2">
+                    <h4 class="text-white mb-3">Hızlı Linkler</h4>
+                    <a class="footer-link" href="#about">Hakkımızda</a>
+                    <a class="footer-link" href="#feature">Özellikler</a>
+                    <a class="footer-link" href="#pricing">Destek Paketleri</a>
+                    <a class="footer-link" href="#contact">İletişim</a>
+                </div>
+
+                <!-- Uygulamayı İndir -->
+                <div class="col-6 col-lg-2">
+                    <h4 class="text-white mb-3">Uygulamayı İndir</h4>
+
+                    <!-- Görselin yoksa şık buton versiyonu -->
+                    <a href="#" class="btn-store mb-2">
+                        <i class="fab fa-google-play"></i>
+                        <div>
+                            <small>Google Play</small>
+                            <div class="strong">İndir</div>
+                        </div>
+                    </a>
+                    <a href="#" class="btn-store">
+                        <i class="fab fa-apple"></i>
+                        <div>
+                            <small>App Store</small>
+                            <div class="strong">İndir</div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
-        <!-- Pricing End -->
 
-
-
-        <!-- Testimonial Start -->
-        <div class="container-xxl py-5" id="review">
-            <div class="container py-5 px-lg-5">
-                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                    <h5 class="text-primary-gradient fw-medium">Kullanıcı Yorumları</h5>
-                    <h1 class="mb-5">DoldurKabı Hakkında Ne Dediler?</h1>
+        <div class="container px-lg-5">
+            <div class="footer-divider"></div>
+            <div class="row align-items-center gy-3 py-3">
+                <div class="col-md-6 text-center text-md-start small">
+                    &copy; <span class="opacity-75">DoldurKabı</span> — Tüm Hakları Saklıdır.
+                    <span class="ms-3">
+                        Website Geliştirici:
+                        <a href="https://ismailselimgarip.com" target="_blank"
+                            class="text-white text-decoration-underline">
+                            İsmail Selim Garip
+                        </a>
+                    </span>
                 </div>
-                <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="testimonial-item rounded p-4">
-                        <div class="d-flex align-items-center mb-4">
-                            <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/testimonial-1.jpg"
-                                style="width: 85px; height: 85px;">
-                            <div class="ms-4">
-                                <h5 class="mb-1">Elif Kaya</h5>
-                                <p class="mb-1">Veteriner</p>
-                                <div>
-                                    <small class="fa fa-star text-warning"></small>
-                                    <small class="fa fa-star text-warning"></small>
-                                    <small class="fa fa-star text-warning"></small>
-                                    <small class="fa fa-star text-warning"></small>
-                                    <small class="fa fa-star text-warning"></small>
-                                </div>
-                            </div>
-                        </div>
-                        <p class="mb-0">Mahallemizdeki sokak hayvanlarının durumu artık kontrol altında. DoldurKabı
-                            sayesinde mama kapları ve evler düzenli takip ediliyor.</p>
-                    </div>
-
-                    <div class="testimonial-item rounded p-4">
-                        <div class="d-flex align-items-center mb-4">
-                            <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/testimonial-2.jpg"
-                                style="width: 85px; height: 85px;">
-                            <div class="ms-4">
-                                <h5 class="mb-1">Mert Aksoy</h5>
-                                <p class="mb-1">Gönüllü</p>
-                                <div>
-                                    <small class="fa fa-star text-warning"></small>
-                                    <small class="fa fa-star text-warning"></small>
-                                    <small class="fa fa-star text-warning"></small>
-                                    <small class="fa fa-star text-warning"></small>
-                                    <small class="fa fa-star text-warning"></small>
-                                </div>
-                            </div>
-                        </div>
-                        <p class="mb-0">İstanbul'da kaybolan kedimi bu uygulamayla buldum. İlan oluşturmak ve insanlara
-                            ulaşmak inanılmaz kolaydı. Teşekkürler!</p>
-                    </div>
-
-                    <div class="testimonial-item rounded p-4">
-                        <div class="d-flex align-items-center mb-4">
-                            <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/testimonial-3.jpg"
-                                style="width: 85px; height: 85px;">
-                            <div class="ms-4">
-                                <h5 class="mb-1">Can Yılmaz</h5>
-                                <p class="mb-1">Belediye Temsilcisi</p>
-                                <div>
-                                    <small class="fa fa-star text-warning"></small>
-                                    <small class="fa fa-star text-warning"></small>
-                                    <small class="fa fa-star text-warning"></small>
-                                    <small class="fa fa-star text-warning"></small>
-                                    <small class="fa fa-star text-warning"></small>
-                                </div>
-                            </div>
-                        </div>
-                        <p class="mb-0">DoldurKabı'yla çalışmaya başladığımızdan beri gönüllülerle koordinasyon çok daha
-                            kolay hale geldi. Harika bir platform.</p>
-                    </div>
-
-                    <div class="testimonial-item rounded p-4">
-                        <div class="d-flex align-items-center mb-4">
-                            <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/testimonial-4.jpg"
-                                style="width: 85px; height: 85px;">
-                            <div class="ms-4">
-                                <h5 class="mb-1">Ayse Demir</h5>
-                                <p class="mb-1">Mobil Geliştirici</p>
-                                <div>
-                                    <small class="fa fa-star text-warning"></small>
-                                    <small class="fa fa-star text-warning"></small>
-                                    <small class="fa fa-star text-warning"></small>
-                                    <small class="fa fa-star text-warning"></small>
-                                    <small class="fa fa-star text-warning"></small>
-                                </div>
-                            </div>
-                        </div>
-                        <p class="mb-0">Uygulamanın tasarımı sade, kullanımı çok kolay. Kayıt, mama ekleme, ilan
-                            paylaşımı gibi her şey mantıklı ve hızlı çalışıyor.</p>
-                    </div>
+                <div class="col-md-6 text-center text-md-end small footer-menu">
+                    <a href="#">Anasayfa</a>
+                    <a href="#">Çerezler</a>
+                    <a href="#">Yardım</a>
+                    <a href="#">SSS</a>
                 </div>
             </div>
         </div>
-        <!-- Testimonial End -->
+
+    </div>
+    <!-- Footer End -->
 
 
 
-        <!-- Contact Start -->
-        <div class="container-xxl py-5" id="contact">
-            <div class="container py-5 px-lg-5">
-                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                    <h5 class="text-primary-gradient fw-medium">Bize Ulaşın</h5>
-                    <h1 class="mb-5">İletişim Formu</h1>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-9">
-                        <div class="wow fadeInUp" data-wow-delay="0.3s">
-                            <p class="text-center mb-4">
-                                DoldurKabı ile ilgili her türlü soru, öneri veya iş birliği talepleriniz için aşağıdaki
-                                formu doldurabilirsiniz. En kısa sürede size dönüş sağlayacağız. Dilerseniz <a
-                                    href="mailto:ismailselimgarip@gmail.com">ismailselimgarip@gmail.com</a> adresine de
-                                mail atabilirsiniz.
-                            </p>
-                            <form>
-                                <div class="row g-3">
-                                    <div class="col-md-6">
-                                        <div class="form-floating">
-                                            <input type="text" class="form-control" id="name" placeholder="Adınız">
-                                            <label for="name">Adınız</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-floating">
-                                            <input type="email" class="form-control" id="email"
-                                                placeholder="E-posta Adresiniz">
-                                            <label for="email">E-posta Adresiniz</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-floating">
-                                            <input type="text" class="form-control" id="subject" placeholder="Konu">
-                                            <label for="subject">Konu</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-floating">
-                                            <textarea class="form-control" placeholder="Mesajınızı buraya yazın"
-                                                id="message" style="height: 150px"></textarea>
-                                            <label for="message">Mesaj</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 text-center">
-                                        <button class="btn btn-primary-gradient rounded-pill py-3 px-5"
-                                            type="submit">Mesajı Gönder</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Contact End -->
 
-
-
-        <!-- Footer Start -->
-        <div class="container-fluid bg-primary text-light footer wow fadeIn" data-wow-delay="0.1s">
-            <div class="container py-5 px-lg-5">
-                <div class="row g-5">
-                    <div class="col-md-6 col-lg-3">
-                        <h4 class="text-white mb-4">İletişim</h4>
-                        <p><i class="fa fa-map-marker-alt me-3"></i>İstanbul, Türkiye</p>
-                        <p><i class="fa fa-phone-alt me-3"></i>+90 555 555 55 55</p>
-                        <p><i class="fa fa-envelope me-3"></i>ismailselimgarip@gmail.com</p>
-                        <div class="d-flex pt-2">
-                            <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-instagram"></i></a>
-                            <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <h4 class="text-white mb-4">Hızlı Bağlantılar</h4>
-                        <a class="btn btn-link" href="#about">Hakkımızda</a>
-                        <a class="btn btn-link" href="#contact">İletişim</a>
-                        <a class="btn btn-link" href="#">Gizlilik Politikası</a>
-                        <a class="btn btn-link" href="#">Kullanım Şartları</a>
-                        <a class="btn btn-link" href="#">Destek Ol</a>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <h4 class="text-white mb-4">Popüler Sayfalar</h4>
-                        <a class="btn btn-link" href="#feature">Özellikler</a>
-                        <a class="btn btn-link" href="#pricing">Destek Paketleri</a>
-                        <a class="btn btn-link" href="#review">Yorumlar</a>
-                        <a class="btn btn-link" href="#download">Uygulamayı İndir</a>
-                        <a class="btn btn-link" href="#">SSS</a>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <h4 class="text-white mb-4">Bültene Katıl</h4>
-                        <p>Güncellemelerden ve yeni projelerimizden haberdar olmak için bültenimize abone ol.</p>
-                        <div class="position-relative w-100 mt-3">
-                            <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text"
-                                placeholder="E-posta adresiniz" style="height: 48px;">
-                            <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2">
-                                <i class="fa fa-paper-plane text-primary-gradient fs-4"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container px-lg-5">
-                <div class="copyright">
-                    <div class="row">
-                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a class="border-bottom" href="#">DoldurKabı</a> - Tüm Hakları Saklıdır.</a>
-                        </div>
-                        <div class="col-md-6 text-center text-md-end">
-                            <div class="footer-menu">
-                                <a href="#">Anasayfa</a>
-                                <a href="#">Çerezler</a>
-                                <a href="#">Yardım</a>
-                                <a href="#">SSS</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Footer End -->
-
-
-
-        <!-- Back to Top -->
-        <a href="#" class="btn btn-lg btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up text-white"></i></a>
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up text-white"></i></a>
     </div>
 
     <!-- JavaScript Libraries -->
@@ -786,8 +903,125 @@
     <script src="lib/counterup/counterup.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
-    <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <script>
+        // Sayfa yüklenince hash'i temizle ve anasayfayı aktif yap
+        window.addEventListener('DOMContentLoaded', () => {
+            setActive('#home');
+            history.replaceState(null, null, ' '); // URL'deki #... kısmını temizler
+        });
+
+        // Navbar scroll efekti (istersen kalsın, istemezsen silebilirsin)
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('.clean-nav');
+            if (!nav) return;
+            if (window.scrollY > 50) nav.classList.add('scrolled');
+            else nav.classList.remove('scrolled');
+        });
+
+        // Linkleri ve bölümleri yakala
+        const links = Array.from(document.querySelectorAll('.navbar-nav .nav-link'));
+        const sections = links
+            .map(a => document.querySelector(a.getAttribute('href')))
+            .filter(Boolean);
+
+        // IntersectionObserver: ekranda en baskın bölüm aktif olsun
+        const io = new IntersectionObserver((entries) => {
+            const visible = entries
+                .filter(e => e.isIntersecting)
+                .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+
+            if (visible) setActive('#' + visible.target.id);
+        }, { rootMargin: '-20% 0px -60% 0px', threshold: [0.2, 0.4, 0.6, 0.8] });
+
+        sections.forEach(sec => io.observe(sec));
+
+        // Tıklamada hemen aktif yap
+        links.forEach(a => a.addEventListener('click', () => setActive(a.getAttribute('href'))));
+
+        function setActive(hash) {
+            links.forEach(l => l.classList.toggle('active', l.getAttribute('href') === hash));
+        }
+    </script>
+
+    <!-- Sponsor Talep Modal (Formspree) -->
+    <div class="modal fade" id="sponsorModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content rounded-4">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title">Sponsor Talebi</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Kapat"></button>
+                </div>
+                <div class="modal-body pt-0">
+                    <form action="https://formspree.io/f/mjkojkrr" method="POST" id="sponsorForm">
+                        <div class="mb-3">
+                            <label class="form-label">Seçilen Paket</label>
+                            <input type="text" class="form-control" name="package" id="packageField" readonly>
+                        </div>
+
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="sp_name" name="name"
+                                        placeholder="Ad Soyad" required>
+                                    <label for="sp_name">Ad Soyad</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="sp_email" name="email"
+                                        placeholder="E-posta" required>
+                                    <label for="sp_email">E-posta</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="sp_company" name="company"
+                                        placeholder="Firma Adı">
+                                    <label for="sp_company">Firma Adı (opsiyonel)</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea class="form-control" id="sp_msg" name="message" placeholder="Mesaj"
+                                        style="height:120px"></textarea>
+                                    <label for="sp_msg">Mesaj</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Formspree için opsiyonel alanlar -->
+                        <input type="hidden" name="_subject" value="Yeni Sponsor Talebi">
+                        <input type="hidden" name="source" value="pricing_section">
+
+                        <div class="d-flex gap-2 mt-3">
+                            <button type="submit" class="btn btn-primary-gradient rounded-pill px-4">Gönder</button>
+                            <button type="button" class="btn btn-outline-light rounded-pill px-4"
+                                data-bs-dismiss="modal">Vazgeç</button>
+                        </div>
+                    </form>
+
+                    <!-- Başarı mesajı (Formspree redirect yerine sayfada göstermek istersen JS ile doldururuz) -->
+                    <div id="sponsorSuccess" class="alert alert-success mt-3 d-none">Teşekkürler! Talebin alındı.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        document.querySelectorAll('.start-package').forEach(btn => {
+            btn.addEventListener('click', e => {
+                e.preventDefault();
+                const pkg = btn.getAttribute('data-package') || '';
+                document.getElementById('packageField').value = pkg;
+                const modal = new bootstrap.Modal(document.getElementById('sponsorModal'));
+                modal.show();
+            });
+        });
+    </script>
+
 </body>
 
 </html>
