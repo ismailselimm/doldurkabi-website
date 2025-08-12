@@ -847,3 +847,146 @@ h6,
 }
 
 
+/* Özellik çipleri şeridi */
+.feature-chips{
+    position: relative;
+    overflow: hidden;
+    margin: 8px 0 2px;
+    padding: 2px 0;
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  }
+  .feature-chips .chips-track{
+    display: inline-flex;
+    gap: 12px;
+    white-space: nowrap;
+    animation: chips-scroll 22s linear infinite;
+    will-change: transform;
+  }
+  .feature-chips:hover .chips-track{ animation-play-state: paused; }
+  
+  @keyframes chips-scroll{
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  
+  /* Tek tek çipler */
+  .chip{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 14px;
+    border-radius: 999px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.95rem;
+    line-height: 1;
+    border: 1px solid rgba(255,255,255,0.25);
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    transition: transform .18s ease, box-shadow .18s ease, background .18s ease, border-color .18s ease;
+    cursor: default;
+  }
+  .chip:hover{
+    transform: translateY(-1px);
+    background: rgba(255,255,255,0.14);
+    border-color: rgba(255,255,255,0.35);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+  }
+  
+  /* Küçük ekran ayarı */
+  @media (max-width: 576px){
+    .chip{ font-size: .9rem; padding: 7px 12px; }
+    .feature-chips .chips-track{ gap: 10px; }
+  }
+  
+  /* Hareket tercihine saygı */
+  @media (prefers-reduced-motion: reduce){
+    .feature-chips .chips-track{ animation: none; }
+  }
+  
+
+ /* Başlıklar */
+.dk-badge{
+    display:inline-block; padding:8px 14px; border-radius:999px;
+    border:1px solid rgba(124,58,237,.25); color:#8b5cf6; font-weight:600;
+    background:rgba(124,58,237,.08);
+}
+.dk-title{ font-weight:800; margin:.6rem 0 0.2rem; }
+.dk-subtitle{ color:#a3a3a3; margin-bottom:1.8rem; }
+
+/* Şerit kapları */
+.dk-marquee-wrap{
+    position:relative; overflow:hidden;
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+    margin: 16px 0; /* üst-alt aralık */
+}
+
+/* Akan hat */
+.dk-marquee{
+    display:flex; gap:22px; white-space:nowrap; will-change:transform;
+}
+.dk-group{ display:flex; gap:22px; }
+
+/* Yön ve hız (üst: sağa, alt: sola) */
+.dk-right{ animation: dk-scroll-right 30s linear infinite; }
+.dk-left { animation: dk-scroll-left  32s linear infinite; }
+
+@keyframes dk-scroll-right{
+    0% { transform: translateX(-50%); }
+    100% { transform: translateX(0%); }
+}
+@keyframes dk-scroll-left{
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-50%); }
+}
+
+/* Kart */
+.dk-card{
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    min-width: 420px;       /* daha geniş */
+    max-width: 520px;       /* daha geniş */
+    min-height: 160px;      /* boydan daha ferah */
+    padding:18px 20px;
+    border-radius:16px;
+    background: rgba(255,255,255,0.75);
+    border:1px solid rgba(0,0,0,0.06);
+    text-align:left;
+    cursor:default;
+    user-select:text;
+    white-space: normal;    /* yazı satır kırabilsin */
+    line-height: 1.45;      /* satır yüksekliği */
+}
+.dk-name{ margin:0 0 4px; color:#7c3aed; font-weight:700; }
+.dk-date{ font-size:.85rem; color:#7a7a7a; display:block; margin-bottom:8px; }
+.dk-text{ margin:0; color:#333; }
+
+/* Koyu/renkli arka planlarda okunabilirlik */
+body.dark .dk-card,
+.dk-reviews .bg-dark .dk-card{
+    background: rgba(255,255,255,0.08);
+    border-color: rgba(255,255,255,0.12);
+    color:#fff;
+}
+body.dark .dk-name{ color:#c4b5fd; }
+body.dark .dk-date{ color:#c9c9c9; }
+
+/* Hover’da hafif yükselme (sadece görsel) */
+.dk-card:hover{ transform: translateY(-2px); transition:.18s ease; }
+
+/* Mobil ayarları */
+@media (max-width: 576px){
+    .dk-card{ min-width: 82vw; max-width: 86vw; }
+    .dk-right{ animation-duration: 26s; }
+    .dk-left { animation-duration: 28s; }
+    .dk-text{ font-size: 0.98rem; }
+}
+
+/* Hareket tercihine saygı */
+@media (prefers-reduced-motion: reduce){
+    .dk-right, .dk-left{ animation: none; }
+}
