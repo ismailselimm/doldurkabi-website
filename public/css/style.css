@@ -906,86 +906,64 @@ h6,
     .feature-chips .chips-track{ animation: none; }
   }
   
+/* Tema renkleri */
+.dk-reviews{ --dk-mor:#7c3aed; --dk-bg:#f6f7ff; }
+.dk-reviews{ background:var(--dk-bg); }
 
- /* Yorumlar */
+/* Başlık & rozet */
 .dk-badge{
-    display:inline-block; padding:8px 14px; border-radius:999px;
-    border:1px solid rgba(124,58,237,.25); color:#8b5cf6; font-weight:600;
-    background:rgba(124,58,237,.08);
-  }
-  .dk-title{ font-weight:800; margin:.6rem 0 0.2rem; }
-  .dk-subtitle{ color:#a3a3a3; margin-bottom:1.8rem; }
-  
-  /* Şerit kapları */
-  .dk-marquee-wrap{
-    position:relative; overflow:hidden;
-    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
-    -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
-    margin:16px 0;
-  }
-  
-  /* Akan hat */
-  .dk-marquee{
-    display:flex; gap:22px; white-space:nowrap;
-    will-change: transform;
-    backface-visibility: hidden;
-  }
-  .dk-group{
-    display:flex; gap:22px;
-    flex:0 0 auto;                 /* esneme yok */
-  }
-  
-  /* Yön ve hız (üst: sağa, alt: sola) — hız artırıldı */
-  .dk-right{ animation: dk-scroll-right 16s linear infinite; }
-  .dk-left { animation: dk-scroll-left  18s linear infinite; }
-  
-  @keyframes dk-scroll-right{
-    from { transform: translate3d(-50%,0,0); }
-    to   { transform: translate3d(0%,0,0); }
-  }
-  @keyframes dk-scroll-left{
-    from { transform: translate3d(0%,0,0); }
-    to   { transform: translate3d(-50%,0,0); }
-  }
-  
-  /* Kart */
-  .dk-card{
-    display:flex; flex-direction:column; justify-content:flex-start;
-    min-width:420px; max-width:520px; min-height:160px;
-    padding:18px 20px; border-radius:16px;
-    background:rgba(255,255,255,0.75);
-    border:1px solid rgba(0,0,0,0.06);
-    text-align:left; cursor:default; user-select:text;
-    white-space:normal; line-height:1.45;
-    flex:0 0 auto;                  /* akışta genişlik sabit */
-  }
-  .dk-name{ margin:0 0 4px; color:#7c3aed; font-weight:700; }
-  .dk-date{ font-size:.85rem; color:#7a7a7a; display:block; margin-bottom:8px; }
-  .dk-text{ margin:0; color:#333; }
-  
-  /* Koyu/renkli arka planlarda okunabilirlik */
-  body.dark .dk-card,
-  .dk-reviews .bg-dark .dk-card{
-    background: rgba(255,255,255,0.08);
-    border-color: rgba(255,255,255,0.12);
-    color:#fff;
-  }
-  body.dark .dk-name{ color:#c4b5fd; }
-  body.dark .dk-date{ color:#c9c9c9; }
-  
-  /* Hover’da hafif yükselme (sadece görsel) */
-  .dk-card:hover{ transform: translateY(-2px); transition:.18s ease; }
-  
-  /* Mobil ayarları — hız biraz daha artıyor */
-  @media (max-width: 576px){
-    .dk-card{ min-width:82vw; max-width:86vw; }
-    .dk-right{ animation-duration:12s; }
-    .dk-left { animation-duration:14s; }
-    .dk-text{ font-size:0.98rem; }
-  }
-  
-  /* Hareket tercihine saygı */
-  @media (prefers-reduced-motion: reduce){
-    .dk-right, .dk-left{ animation:none; }
-  }
-  
+  display:inline-block; padding:8px 14px; border-radius:999px;
+  border:1px solid rgba(124,58,237,.25); color:var(--dk-mor); font-weight:700;
+  background:rgba(124,58,237,.10);
+}
+.dk-title{ font-weight:800; color:#111; }
+.dk-subtitle{ color:#7a7a7a; }
+
+/* Ticker kapsayıcı: kenarlara yumuşak fade (mask yerine overlay) */
+.testimonial-ticker{
+  position:relative; overflow:hidden; margin-bottom:1.25rem; padding-inline:8px;
+}
+.testimonial-ticker::before,
+.testimonial-ticker::after{
+  content:""; position:absolute; top:0; bottom:0; width:72px; pointer-events:none; z-index:2;
+}
+.testimonial-ticker::before{ left:0;  background:linear-gradient(to right, var(--dk-bg), rgba(255,255,255,0)); }
+.testimonial-ticker::after { right:0; background:linear-gradient(to left,  var(--dk-bg), rgba(255,255,255,0)); }
+
+/* Kayan track */
+.ticker-track{
+  display:inline-flex; gap:1rem;
+  will-change:transform;
+  animation: ticker-scroll var(--dur, 26s) linear infinite;
+  backface-visibility:hidden; transform:translate3d(0,0,0);
+}
+.ticker-bottom .ticker-track{ animation-name: ticker-scroll-rev; }
+
+/* Hover pause (desktop) */
+@media (hover:hover){
+  .testimonial-ticker:hover .ticker-track{ animation-play-state:paused; }
+}
+
+/* Kart */
+.t-card{
+  min-width:320px; max-width:360px;
+  background:#fff; border:1px solid #eee; color:#333;
+  padding:16px 18px; border-radius:16px;
+}
+.t-card .t-head{ display:flex; align-items:center; justify-content:space-between; margin-bottom:.4rem; }
+.t-card .t-head h6{ margin:0; font-weight:800; color:var(--dk-mor); }
+.t-card .t-head span{ color:#9a9a9a; font-size:.95rem; }
+.t-card p{ margin:0; line-height:1.55; color:#444; }
+.t-card .t-meta{ display:block; margin-top:.5rem; font-size:.85rem; color:#9a9a9a; }
+
+/* Animasyonlar (aynı akış) */
+@keyframes ticker-scroll{ from{transform:translateX(0)} to{transform:translateX(-50%)} }
+@keyframes ticker-scroll-rev{ from{transform:translateX(-50%)} to{transform:translateX(0)} }
+
+/* Mobil tuning: daha küçük kart, daha hızlı akış */
+@media (max-width:576px){
+  .t-card{ min-width:260px; max-width:280px; padding:14px 16px; }
+  .ticker-track{ gap:.75rem; }
+  .ticker-top   .ticker-track{ animation-duration: 20s; }
+  .ticker-bottom .ticker-track{ animation-duration: 22s; }
+}

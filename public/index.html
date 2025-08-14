@@ -645,153 +645,183 @@
 
 
     <!-- Yorumlar Start -->
-    <section id="review" class="dk-reviews">
-        <div class="container-xxl py-5">
-            <div class="container py-4 px-lg-5 text-center">
+    <section id="review" class="container-fluid py-5 dk-reviews">
+        <div class="container py-5">
+            <div class="text-center mx-auto mb-5" style="max-width:800px;">
                 <span class="dk-badge">Yorumlar</span>
-                <h2 class="dk-title">Uygulama Görüşleri</h2>
+                <h1 class="display-5 dk-title">Uygulama Görüşleri</h1>
                 <p class="dk-subtitle">DoldurKabı’nı kullananların deneyimlerinden kesitler.</p>
+            </div>
 
-                <!-- ÜST ŞERİT — SAĞA DOĞRU -->
-                <div class="dk-marquee-wrap">
-                    <div class="dk-marquee dk-right">
-                        <div class="dk-group">
-                            <article class="dk-card">
-                                <h6 class="dk-name">Zeynep • Gönüllü</h6>
-                                <time class="dk-date">İstanbul • 2025</time>
-                                <p class="dk-text">Mahallemizdeki mama noktalarını uygulamadan takip ediyoruz.
-                                    Bildirimler sayesinde kaplar hiç boş kalmıyor.</p>
-                            </article>
-                            <article class="dk-card">
-                                <h6 class="dk-name">Emir • Veteriner</h6>
-                                <time class="dk-date">Ankara • 2025</time>
-                                <p class="dk-text">Kayıp ilanları bize de düşüyor; bulununca hızlıca güncelleyip
-                                    sahiplerine ulaştırıyoruz. Süreç çok şeffaf.</p>
-                            </article>
-                            <article class="dk-card">
-                                <h6 class="dk-name">Merve • Kullanıcı</h6>
-                                <time class="dk-date">İzmir • 2025</time>
-                                <p class="dk-text">Sahiplendirme bölümünden Pamuk’a yuva bulduk. Mesajlaşma ve
-                                    randevu akışı tertemiz çalıştı.</p>
-                            </article>
-                            <article class="dk-card">
-                                <h6 class="dk-name">Baran • Gönüllü</h6>
-                                <time class="dk-date">Bursa • 2025</time>
-                                <p class="dk-text">Acil ihtiyaç kartları çok işe yarıyor. Mama stokları bitmeden
-                                    haberimiz oluyor.</p>
-                            </article>
-                            <article class="dk-card">
-                                <h6 class="dk-name">Elif • Kullanıcı</h6>
-                                <time class="dk-date">Antalya • 2025</time>
-                                <p class="dk-text">Harita üzerinde çevremdeki noktaları görmek ve fotoğraf eklemek
-                                    çok pratik. Teşekkürler DoldurKabı!</p>
-                            </article>
+            <!-- ÜST ŞERİT (sağa kayar) -->
+            <div class="testimonial-ticker ticker-top" style="--dur: 26s">
+                <div class="ticker-track">
+                    <!-- grup 1 -->
+                    <article class="t-card">
+                        <div class="t-head">
+                            <h6>Zeynep</h6><span>Gönüllü</span>
                         </div>
-                        <!-- kesintisiz akış için tekrar -->
-                        <div class="dk-group" aria-hidden="true">
-                            <article class="dk-card">
-                                <h6 class="dk-name">Zeynep • Gönüllü</h6>
-                                <time class="dk-date">İstanbul • 2025</time>
-                                <p class="dk-text">Mahallemizdeki mama noktalarını uygulamadan takip ediyoruz.
-                                    Bildirimler sayesinde kaplar hiç boş kalmıyor.</p>
-                            </article>
-                            <article class="dk-card">
-                                <h6 class="dk-name">Emir • Veteriner</h6>
-                                <time class="dk-date">Ankara • 2025</time>
-                                <p class="dk-text">Kayıp ilanları bize de düşüyor; bulununca hızlıca güncelleyip
-                                    sahiplerine ulaştırıyoruz. Süreç çok şeffaf.</p>
-                            </article>
-                            <article class="dk-card">
-                                <h6 class="dk-name">Merve • Kullanıcı</h6>
-                                <time class="dk-date">İzmir • 2025</time>
-                                <p class="dk-text">Sahiplendirme bölümünden Pamuk’a yuva bulduk. Mesajlaşma ve
-                                    randevu akışı tertemiz çalıştı.</p>
-                            </article>
-                            <article class="dk-card">
-                                <h6 class="dk-name">Baran • Gönüllü</h6>
-                                <time class="dk-date">Bursa • 2025</time>
-                                <p class="dk-text">Acil ihtiyaç kartları çok işe yarıyor. Mama stokları bitmeden
-                                    haberimiz oluyor.</p>
-                            </article>
-                            <article class="dk-card">
-                                <h6 class="dk-name">Elif • Kullanıcı</h6>
-                                <time class="dk-date">Antalya • 2025</time>
-                                <p class="dk-text">Harita üzerinde çevremdeki noktaları görmek ve fotoğraf eklemek
-                                    çok pratik. Teşekkürler DoldurKabı!</p>
-                            </article>
+                        <p>Mahallemizdeki mama noktalarını uygulamadan takip ediyoruz. Bildirimler sayesinde kaplar hiç
+                            boş kalmıyor.</p>
+                        <small class="t-meta">İstanbul · 2025</small>
+                    </article>
+                    <article class="t-card">
+                        <div class="t-head">
+                            <h6>Emir</h6><span>Veteriner</span>
                         </div>
-                    </div>
+                        <p>Kayıp ilanları bize de düşüyor; bulununca hızlıca güncelleyip sahiplerine ulaştırıyoruz.
+                            Süreç çok şeffaf.</p>
+                        <small class="t-meta">Ankara · 2025</small>
+                    </article>
+                    <article class="t-card">
+                        <div class="t-head">
+                            <h6>Merve</h6><span>Kullanıcı</span>
+                        </div>
+                        <p>Sahiplendirme bölümünden Pamuk’a yuva bulduk. Mesajlaşma ve randevu akışı tertemiz çalıştı.
+                        </p>
+                        <small class="t-meta">İzmir · 2025</small>
+                    </article>
+                    <article class="t-card">
+                        <div class="t-head">
+                            <h6>Baran</h6><span>Gönüllü</span>
+                        </div>
+                        <p>Acil ihtiyaç kartları çok işe yarıyor. Mama stokları bitmeden haberimiz oluyor.</p>
+                        <small class="t-meta">Bursa · 2025</small>
+                    </article>
+                    <article class="t-card">
+                        <div class="t-head">
+                            <h6>Elif</h6><span>Kullanıcı</span>
+                        </div>
+                        <p>Harita üzerinde çevremdeki noktaları görmek ve fotoğraf eklemek çok pratik. Teşekkürler
+                            DoldurKabı!</p>
+                        <small class="t-meta">Antalya · 2025</small>
+                    </article>
+
+                    <!-- kesintisiz akış için kopya -->
+                    <article class="t-card" aria-hidden="true">
+                        <div class="t-head">
+                            <h6>Zeynep</h6><span>Gönüllü</span>
+                        </div>
+                        <p>Mahallemizdeki mama noktalarını uygulamadan takip ediyoruz. Bildirimler sayesinde kaplar hiç
+                            boş kalmıyor.</p>
+                        <small class="t-meta">İstanbul · 2025</small>
+                    </article>
+                    <article class="t-card" aria-hidden="true">
+                        <div class="t-head">
+                            <h6>Emir</h6><span>Veteriner</span>
+                        </div>
+                        <p>Kayıp ilanları bize de düşüyor; bulununca hızlıca güncelleyip sahiplerine ulaştırıyoruz.
+                            Süreç çok şeffaf.</p>
+                        <small class="t-meta">Ankara · 2025</small>
+                    </article>
+                    <article class="t-card" aria-hidden="true">
+                        <div class="t-head">
+                            <h6>Merve</h6><span>Kullanıcı</span>
+                        </div>
+                        <p>Sahiplendirme bölümünden Pamuk’a yuva bulduk. Mesajlaşma ve randevu akışı tertemiz çalıştı.
+                        </p>
+                        <small class="t-meta">İzmir · 2025</small>
+                    </article>
+                    <article class="t-card" aria-hidden="true">
+                        <div class="t-head">
+                            <h6>Baran</h6><span>Gönüllü</span>
+                        </div>
+                        <p>Acil ihtiyaç kartları çok işe yarıyor. Mama stokları bitmeden haberimiz oluyor.</p>
+                        <small class="t-meta">Bursa · 2025</small>
+                    </article>
+                    <article class="t-card" aria-hidden="true">
+                        <div class="t-head">
+                            <h6>Elif</h6><span>Kullanıcı</span>
+                        </div>
+                        <p>Harita üzerinde çevremdeki noktaları görmek ve fotoğraf eklemek çok pratik. Teşekkürler
+                            DoldurKabı!</p>
+                        <small class="t-meta">Antalya · 2025</small>
+                    </article>
                 </div>
+            </div>
 
-                <!-- ALT ŞERİT — SOLA DOĞRU -->
-                <div class="dk-marquee-wrap mt-3">
-                    <div class="dk-marquee dk-left">
-                        <div class="dk-group">
-                            <article class="dk-card">
-                                <h6 class="dk-name">Kerem • Kullanıcı</h6>
-                                <time class="dk-date">Eskişehir • 2025</time>
-                                <p class="dk-text">Uygulama hafif ve hızlı. Bildirimlerden etkinliklere kolayca
-                                    katılıyorum.</p>
-                            </article>
-                            <article class="dk-card">
-                                <h6 class="dk-name">Selin • Gönüllü</h6>
-                                <time class="dk-date">Kocaeli • 2025</time>
-                                <p class="dk-text">Mama dağıtımlarını ekipçe koordine etmek çok kolaylaştı. Harita
-                                    üstü notlar harika.</p>
-                            </article>
-                            <article class="dk-card">
-                                <h6 class="dk-name">Hakan • Veteriner</h6>
-                                <time class="dk-date">Trabzon • 2025</time>
-                                <p class="dk-text">Barınaklarla entegrasyon güzel düşünülmüş. Vaka geçişleri net.</p>
-                            </article>
-                            <article class="dk-card">
-                                <h6 class="dk-name">Naz • Kullanıcı</h6>
-                                <time class="dk-date">Adana • 2025</time>
-                                <p class="dk-text">Kayıp ilanı açtım; bir saat içinde 10’dan fazla geri dönüş aldım.</p>
-                            </article>
-                            <article class="dk-card">
-                                <h6 class="dk-name">Okan • Gönüllü</h6>
-                                <time class="dk-date">Samsun • 2025</time>
-                                <p class="dk-text">Topluluk sayfası sayesinde yeni gönüllülerle tanıştım. Süper!</p>
-                            </article>
+            <!-- ALT ŞERİT (sola kayar) -->
+            <div class="testimonial-ticker ticker-bottom" style="--dur: 28s">
+                <div class="ticker-track">
+                    <!-- grup 1 -->
+                    <article class="t-card">
+                        <div class="t-head">
+                            <h6>Kerem</h6><span>Kullanıcı</span>
                         </div>
-                        <!-- tekrar -->
-                        <div class="dk-group" aria-hidden="true">
-                            <article class="dk-card">
-                                <h6 class="dk-name">Kerem • Kullanıcı</h6>
-                                <time class="dk-date">Eskişehir • 2025</time>
-                                <p class="dk-text">Uygulama hafif ve hızlı. Bildirimlerden etkinliklere kolayca
-                                    katılıyorum.</p>
-                            </article>
-                            <article class="dk-card">
-                                <h6 class="dk-name">Selin • Gönüllü</h6>
-                                <time class="dk-date">Kocaeli • 2025</time>
-                                <p class="dk-text">Mama dağıtımlarını ekipçe koordine etmek çok kolaylaştı. Harita
-                                    üstü notlar harika.</p>
-                            </article>
-                            <article class="dk-card">
-                                <h6 class="dk-name">Hakan • Veteriner</h6>
-                                <time class="dk-date">Trabzon • 2025</time>
-                                <p class="dk-text">Barınaklarla entegrasyon güzel düşünülmüş. Vaka geçişleri net.</p>
-                            </article>
-                            <article class="dk-card">
-                                <h6 class="dk-name">Naz • Kullanıcı</h6>
-                                <time class="dk-date">Adana • 2025</time>
-                                <p class="dk-text">Kayıp ilanı açtım; bir saat içinde 10’dan fazla geri dönüş aldım.</p>
-                            </article>
-                            <article class="dk-card">
-                                <h6 class="dk-name">Okan • Gönüllü</h6>
-                                <time class="dk-date">Samsun • 2025</time>
-                                <p class="dk-text">Topluluk sayfası sayesinde yeni gönüllülerle tanıştım. Süper!</p>
-                            </article>
+                        <p>Uygulama hafif ve hızlı. Bildirimlerden etkinliklere kolayca katılıyorum.</p>
+                        <small class="t-meta">Eskişehir · 2025</small>
+                    </article>
+                    <article class="t-card">
+                        <div class="t-head">
+                            <h6>Selin</h6><span>Gönüllü</span>
                         </div>
-                    </div>
+                        <p>Mama dağıtımlarını ekipçe koordine etmek çok kolaylaştı. Harita üstü notlar harika.</p>
+                        <small class="t-meta">Kocaeli · 2025</small>
+                    </article>
+                    <article class="t-card">
+                        <div class="t-head">
+                            <h6>Hakan</h6><span>Veteriner</span>
+                        </div>
+                        <p>Barınaklarla entegrasyon güzel düşünülmüş. Vaka geçişleri net.</p>
+                        <small class="t-meta">Trabzon · 2025</small>
+                    </article>
+                    <article class="t-card">
+                        <div class="t-head">
+                            <h6>Naz</h6><span>Kullanıcı</span>
+                        </div>
+                        <p>Kayıp ilanı açtım; bir saat içinde 10’dan fazla geri dönüş aldım.</p>
+                        <small class="t-meta">Adana · 2025</small>
+                    </article>
+                    <article class="t-card">
+                        <div class="t-head">
+                            <h6>Okan</h6><span>Gönüllü</span>
+                        </div>
+                        <p>Topluluk sayfası sayesinde yeni gönüllülerle tanıştım. Süper!</p>
+                        <small class="t-meta">Samsun · 2025</small>
+                    </article>
+
+                    <!-- kesintisiz akış için kopya -->
+                    <article class="t-card" aria-hidden="true">
+                        <div class="t-head">
+                            <h6>Kerem</h6><span>Kullanıcı</span>
+                        </div>
+                        <p>Uygulama hafif ve hızlı. Bildirimlerden etkinliklere kolayca katılıyorum.</p><small
+                            class="t-meta">Eskişehir · 2025</small>
+                    </article>
+                    <article class="t-card" aria-hidden="true">
+                        <div class="t-head">
+                            <h6>Selin</h6><span>Gönüllü</span>
+                        </div>
+                        <p>Mama dağıtımlarını ekipçe koordine etmek çok kolaylaştı. Harita üstü notlar harika.</p><small
+                            class="t-meta">Kocaeli · 2025</small>
+                    </article>
+                    <article class="t-card" aria-hidden="true">
+                        <div class="t-head">
+                            <h6>Hakan</h6><span>Veteriner</span>
+                        </div>
+                        <p>Barınaklarla entegrasyon güzel düşünülmüş. Vaka geçişleri net.</p><small
+                            class="t-meta">Trabzon · 2025</small>
+                    </article>
+                    <article class="t-card" aria-hidden="true">
+                        <div class="t-head">
+                            <h6>Naz</h6><span>Kullanıcı</span>
+                        </div>
+                        <p>Kayıp ilanı açtım; bir saat içinde 10’dan fazla geri dönüş aldım.</p><small
+                            class="t-meta">Adana · 2025</small>
+                    </article>
+                    <article class="t-card" aria-hidden="true">
+                        <div class="t-head">
+                            <h6>Okan</h6><span>Gönüllü</span>
+                        </div>
+                        <p>Topluluk sayfası sayesinde yeni gönüllülerle tanıştım. Süper!</p><small class="t-meta">Samsun
+                            · 2025</small>
+                    </article>
                 </div>
-
             </div>
         </div>
     </section>
-    <!-- Yorumlar Bitiş -->
+    <!-- Yorumlar End -->
+
 
 
 
